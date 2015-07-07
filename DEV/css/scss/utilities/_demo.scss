@@ -1,0 +1,74 @@
+// Demo Styles
+
+.demo {
+	background: #F9F9F9;
+	padding: 0.5vh 2vh;
+	// 992
+	@media (min-width: $break-md-screen) {
+		padding: 1vh 4vh;	
+	}
+}
+
+.demo-wrap {
+	background: white;
+	border: 3px solid #DDD;		
+	margin: 2em auto;	
+	padding: 1em;	
+}
+
+.demo-title {
+	background-color: #F5F5F5;
+  font-size: 1em;
+  padding: 0.75em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.demo-toggle-btn {
+	background: #EEE;
+	box-shadow: 0 0 0 1px #DDD;
+  border-radius: 0.25em;
+  color: #555;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.438em 2.2em 0.438em 0.7em;
+  position: relative;	
+  span {
+	  border-radius: 0 0.25em 0.25em 0;
+	  font-size: 1em;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  background-color: #CCC;
+	  padding-top: 0.4em;
+	  padding-left: 0.1em;
+	  height: 100%;
+	  &.icon-carret-up {
+	  }	
+  }  
+}
+
+.code-demo {
+	display: inline-block;	
+	margin: 2em auto 0;
+	padding: 0 1.5em;		
+	width: 100%;
+	.code-wrap {
+		height: 0;
+		margin-top: 1em;		
+		opacity: 0;
+		overflow: hidden;
+		transition: all 500ms ease;	
+	}	
+}
+
+.visible {
+	.code-wrap {
+		display: block;
+		height: auto;	
+		opacity: 1;
+	}	
+}	
+

@@ -1,0 +1,108 @@
+/*---------------- Resources Page --------------------*/
+
+/* -- Resource List -- */
+
+.resource-list {
+	.content-post {
+		@include white-box;
+		line-height: 25px;
+		padding:25px;
+	}
+	figure.thumb {
+		@media (min-width: $break-lg-phone) {width:25%;}
+	}
+	.title {display: block;}
+	.title, .title a {
+		background:none;
+		padding:0;
+	}
+	.description {line-height: 20px;}
+}
+
+/* --- Resource Links --- */
+
+.resource-links {
+	display:inline-block;
+	line-height: 0;
+	padding:0;
+	margin:10px 0 0;
+	width:100%;
+	ul { 
+		margin: 0;
+		padding:0;
+	}
+	li {
+		@include grey-box;
+		display:inline-block;
+		line-height: 40px;
+		margin:0 0 10px;
+		padding: 5px 10px;
+		width:100%;
+		span, .title a {
+			background:none;
+			font-size:18px;
+			line-height:40px;
+			margin:0;
+		}
+	}
+	li:last-child {margin: 0;}
+	.title {
+		@media (min-width: $break-lg-phone) {float: left;}
+	}
+}
+
+.resource-icons {
+	display: inline-block;
+	a {
+		float: left;
+		margin: 0 5px;
+		transition: all 0.5s ease-in-out;
+	}
+	i {
+		font-size: 20px;
+		margin: 0 3px;
+		@media (min-width: $break-lg-phone) {
+			font-size: 30px;
+			margin: 0;
+		}
+	}
+	a:hover, a:focus {		
+		color: $light-blue;
+	}
+	@media (min-width: $break-lg-phone) {float: right;}
+}
+
+// Sort Item 
+
+.sort-item select {
+	width: 70px !important;
+}
+
+/* -- Resource Detail -- */
+
+.resource-detail {
+	.title { 
+		display: block;
+		float: none;
+		font-size:26px;
+		width: 100%;
+	}
+	.resource-links {
+		li {
+			@include reset-box;
+			margin-bottom: 0;
+		}
+	}
+	.resource-icons {
+		float: none;
+		width: 100%;
+		a {margin:0 3px;}
+		i {
+			font-size: 20px;
+			@media (min-width: $break-lg-phone) {
+				font-size: 24px;
+			}
+		}
+	}
+	.resource-links {max-width: 300px;}
+}

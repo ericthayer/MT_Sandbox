@@ -1,0 +1,75 @@
+/* --- Staff Widget  --- */
+/*------------------------------------*/
+
+.staff-widget {
+	line-height: normal;
+	.content-post {}
+	.title {
+		margin-bottom: 5px;
+		span {
+			display: block;
+			font-size: 18px;
+		}
+	}
+	.email, .phone, .staff-link {
+		font-size: 14px;
+		line-height: 14px;
+		margin-bottom: 5px;
+		a {
+			color: $secondary-color;		
+			font-size: 14px;
+		}		
+	}
+	.phone {margin-top: 5px;}
+	.description {margin-top: 8px;}
+	.read-more {display: inline;}
+	@media (min-width: $break-sm-phone) {
+		* {text-align: left;}
+		figure {		
+			float: left;
+			margin: 0 15px 10px 0;
+			width: 30%;
+		}
+	}
+	@media (min-width: $break-lg-phone) {
+		.content-text {
+			float: left;
+			width: 66%;	
+		}
+	}
+}
+
+/* --- Staff Grid  --- */
+
+.staff-widget.grid .content-post {
+	float:left;
+	margin:0 8% 5% 0;
+	width:28%;
+}
+
+.staff-widget.grid .content-post:nth-of-type(3n) { margin-right:0; }
+
+#content .staff-widget.grid figure {
+	display:block;
+	float:none;
+	margin-bottom:10px;
+	width:100%;
+}
+
+.staff-widget.grid figure span {
+	max-height:135px;
+	overflow:hidden;
+}
+
+.staff-widget.grid .content-text {
+	display: block;
+	float: none;
+	width: auto;
+}
+
+.staff-widget.grid .description {
+	max-height:100px;
+	overflow:hidden;
+}
+
+.staff-widget.grid .title a { }

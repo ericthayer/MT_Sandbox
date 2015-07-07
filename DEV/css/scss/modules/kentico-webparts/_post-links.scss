@@ -1,0 +1,210 @@
+/* --- Post Links (buttons) --- */
+/*------------------------------------*/
+
+.post-links {	
+	margin:10px 0;
+	width:auto;
+}
+
+/*
+.post-links a, a.share-btn, .share a, .event-link a, .read-more a, .readon a, #main-content input[type="submit"], .FormButton, .featured-book p a {
+	background: #3f87c1;
+	color:white;
+	font-size:11px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-transform:uppercase;
+	border:none;
+	letter-spacing: 1px;
+	margin: 0 10px 0 0;
+	outline:0;
+	opacity: 1;
+	text-decoration:none;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
+
+
+.post-links a:hover, .share a:hover, .sharing .share-button a:hover, .read-more a:hover, .event-link a:hover, .detail a.share-btn:hover, #main-content input[type="submit"]:hover, .FormButton:hover {
+	background:#EEE;
+	color:#666;
+	text-shadow:none;
+}
+*/
+
+.FeedLink img {float:left;}	
+
+#global-zeroclipboard-html-bridge div {height:22px !important;}
+
+.link {
+	display:inline-block;
+	margin:0 auto 1em;
+	padding-left:10px;
+	text-align:center;
+	width:100%;
+}
+
+.link a {color: white;}
+
+.lg.link {
+	display: block;
+	font-family: 'Cutive', serif;
+	line-height: 15px;
+	padding: 15px 25px;
+	width: 90%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.35) inset, 0 2px 1px rgba(255,255,255,0.15) inset;
+	border-radius: 3px;
+}
+
+.link.archive {
+	background: rgb(252,255,244);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(252,255,244,1)), color-stop(0.4, rgba(223,229,215,1)), to(rgba(179,190,173,1)));
+	background: -webkit-linear-gradient(rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);
+	background: -moz-linear-gradient(rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);
+	background: -o-linear-gradient(rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);
+	background: linear-gradient(rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);	
+}
+
+.link.archive a {
+	color: #666667;
+	font-size:20px;
+	text-shadow: 1px 1px rgba(255,255,255,0.5);
+}
+
+.link.support {
+	background: rgb(164,179,87);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(164,179,87,1)), to(rgba(117,137,12,1)));
+	background: -webkit-linear-gradient(rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -moz-linear-gradient(rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -o-linear-gradient(rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: linear-gradient(rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+}
+
+.link.support a {
+	color: white;
+	font-size: 17px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+}
+
+.icon-links {
+    display:inline-block;
+    padding:0;
+    width:100%;
+}
+
+.icon-links .content-item {
+    margin-top:-15px;
+    text-align:center;
+}
+
+.icon-links .link {
+	display: inline-block;
+	width: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+.link img {max-width:none;}
+	
+.link span {
+	border:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+.link span {
+	background: url(../images/Icons/Docs/icon-reg2.png) no-repeat 11px 4px #4582cc;
+	font-size: 17px;
+	padding: 7px 20px 5px 37px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_AnonymousContentSubscription_lblResult {
+	background: white;
+	text-transform: none;
+	padding: 8px 15px;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 17px;
+	text-align: center;
+	display: inline-block;
+	text-shadow: none;
+	font-weight: bold;
+	letter-spacing: 0;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_AnonymousContentSubscription_reqEmailAddress {
+	background: none;
+	text-transform: none;
+	text-align: left;
+	width: 100% !important;
+	float: left;
+	line-height: 14px;
+	padding: 0 10px;
+	margin: 0 auto 5px;
+	font-style: normal !important;
+	color: red;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_AnonymousContentSubscription_lblResult br {display: none;}
+
+.link.donate span {
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px #b1b1b1;
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, -moz-linear-gradient(top, #b1b1b1 0%, #525252 100%);
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b1b1b1), color-stop(100%,#525252));
+	background:url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, -webkit-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, -o-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, -ms-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-donate.png) no-repeat 8px 4px, linear-gradient(to bottom, #b1b1b1 0%,#525252 100%);
+	
+}
+
+.link.buy span {
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px #b1b1b1;
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, -moz-linear-gradient(top, #b1b1b1 0%, #525252 100%);
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b1b1b1), color-stop(100%,#525252));
+	background:url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, -webkit-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, -o-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, -ms-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-buy.png) no-repeat 8px 4px, linear-gradient(to bottom, #b1b1b1 0%,#525252 100%);
+	
+}
+
+.link.audio span {
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px #b1b1b1;
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, -moz-linear-gradient(top, #b1b1b1 0%, #525252 100%);
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b1b1b1), color-stop(100%,#525252));
+	background:url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, -webkit-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, -o-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, -ms-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-audio.png) no-repeat 8px 3px, linear-gradient(to bottom, #b1b1b1 0%,#525252 100%);
+	
+}
+
+.link.document span {
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center #b1b1b1;
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, -moz-linear-gradient(top, #b1b1b1 0%, #525252 100%);
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b1b1b1), color-stop(100%,#525252));
+	background:url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, -webkit-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, -o-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, -ms-linear-gradient(top, #b1b1b1 0%,#525252 100%);
+	background: url(../images/Icons/Btns/icon-document-sm.png) no-repeat 8px center, linear-gradient(to bottom, #b1b1b1 0%,#525252 100%);
+	margin-bottom:10px;
+	min-width:200px;
+	
+}
+
+.link.clean span {
+	background:none;
+	border:none;
+	padding:0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}

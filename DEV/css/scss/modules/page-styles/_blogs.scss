@@ -1,0 +1,96 @@
+/*---------------- Blog Page Styles  --------------------*/
+
+/* --- Subscribe --- */
+
+.subscribe  {
+	margin:0;
+	h2 {
+		margin-bottom: 20px;
+		@media (min-width: $break-lg-phone) {
+			margin-bottom: 10px;
+		}
+	}
+	a {
+		display:block;
+		line-height: 12px;
+		margin:0 auto 20px !important;
+	}
+	a span {
+		font-size: 11px;
+		line-height: normal;
+		letter-spacing: 0.5px;
+		margin: 0;
+		padding: 6px 10px;
+	}
+	a span:after {content: "";}
+}
+
+/* --- Side Info  --- */
+
+.side-info {}
+
+.side-info figure span { width:75px; }
+
+.side-info .content-post { margin:0 !important; }
+
+/* --- Details  --- */
+
+.detail {
+	.content-post {
+		 margin-bottom:10px;
+		 position: relative;
+	}
+	 .post-info {
+		display:inline-block;
+		margin:5px 0 15px 0;
+		width:100%;
+	}
+	.CntRatingContent {
+		display:inline-block;
+		margin-bottom:5px;
+	}
+}
+
+/* --- Blog Posts --- */
+
+.blog-posts {
+	margin-bottom: 0;
+	.content-post {
+		background: white;
+		border: 1px solid #DDD;
+		margin-bottom: 50px;
+		padding: 20px 4%;
+		position: relative;
+	}
+	.title {
+		@media (min-width: $break-lg-phone) {
+			font-size: 1em;
+			margin-bottom: 12px;
+			width: 90%;
+		}
+	}
+	.post-info {
+		margin: 10px 0;
+		span {@include date-label;}
+		@media (min-width: $break-lg-phone) {
+			position: absolute;
+			top:5px;
+			right: 0;
+		}
+	}
+	figure {@include blog-img-sm;}
+}
+
+/* -- Blog Media Icons  -- */
+
+.blog-media-icons {
+	display: inline-block;
+	margin: 5px 0;
+	width:auto;
+	div {
+		float: left;
+		margin-right: 10px;
+		width: auto;
+	}
+	i {font-size: 30px;}
+}

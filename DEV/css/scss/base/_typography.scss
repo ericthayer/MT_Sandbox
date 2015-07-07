@@ -1,0 +1,46 @@
+// Typography
+
+h1, h2, h3, h4, h5, h6, .title, .title a {
+	color: $primary-color;
+	font-family: $Montserrat;
+	font-weight: normal;
+	margin: 0 0 15px;
+	-ms-word-break: break-word;
+	word-break:break-word;
+}
+
+h1 {font-size: 1.875em;}
+
+h2 {font-size: 1.500em;}
+
+h3 {font-size: 1.125em;}
+
+h4 {font-size: 0.875em;}
+
+h5 {font-size: 0.750em;}
+
+h6 {font-size: 0.750em;}
+
+p {
+	font-size: 0.75em;
+	@media (min-width: $break-sm-phone) {
+		font-size: 0.7em;
+	}
+	@media (min-width: $break-lg-phone) {
+		font-size: 14px;
+	}
+}
+
+p.wire {
+	background-color: grey;
+	color: white;
+	font-family: $Montserrat;
+	font-size: 21px; 
+	line-height: 500px;
+	letter-spacing: 1px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sidebar p.wire {background-color: teal;}

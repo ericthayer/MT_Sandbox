@@ -1,0 +1,43 @@
+/*---------------- Blog Archive List --------------------*/
+
+.archive-list {
+	text-align: left;
+		h2 {@include header-label;}
+	ul {
+		list-style-type: none;
+		padding: 15px 0 0;
+		li {
+			background-color: white;
+			border: 1px solid #DDD;
+			display: inline-block;
+			margin-bottom: 15px;
+			padding: 15px;
+			position: relative;
+			width: 100%;
+		}
+		a {
+			display: block;
+			font-size: 1.3em;
+			line-height: 1em;
+			letter-spacing: 0;
+			margin-bottom: 10px;
+			text-decoration: underline;
+			text-shadow: $wht-text-shadow;
+			@media (min-width: $break-lg-phone) {
+				font-size: 18px;
+				line-height: 22px;
+			}			
+		}
+		a:last-child {margin-bottom: 0;}
+		.post-date {
+			@include date-label;
+			display: inline-block;
+			text-decoration: none !important;
+			@media (min-width: $break-lg-phone) {				
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}

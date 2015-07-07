@@ -1,0 +1,58 @@
+.RadScheduler {
+	width:auto !important;
+	-moz-box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+}
+
+.RadScheduler * {
+	-moz-box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+}
+
+.RadScheduler tbody {
+	display:table;
+	width:100%;
+}
+
+.RadScheduler_Default .rsHorizontalHeaderTable th, .RadScheduler_Default .rsContentTable td {width: 15%;}
+
+.RadScheduler_Default .rsHorizontalHeaderTable th:first-child, .RadScheduler_Default .rsHorizontalHeaderTable th:last-child, .RadScheduler_Default .rsContentTable td.rsSunCol, .RadScheduler_Default .rsContentTable td.rsSatCol {width: 10%;}
+
+#CMSHeaderDiv {position: relative;}
+
+.MenuItemEdit {margin-right:15px;}
+
+.MenuItemEdit .Text { 
+    font-size:12px;
+    padding-left:10px;
+}
+
+.rsInnerFix {margin-right: 0 !important;}
+
+.gecko .rsInnerFix {margin-right: 15px !important;}
+
+select { font-size: 14px; }
+
+/* --- Doc Library  --- */
+/*------------------------------------*/
+
+.ContextMenu {
+	background: white;
+	padding: 10px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.ItemPadding {}
+
+.ItemPadding {
+	padding:4px 0;
+}
+
+.ItemPadding span:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}

@@ -1,0 +1,124 @@
+/* --- Post Feeds  --- */
+/*------------------------------------*/
+
+#sidebar figure {  }
+
+#sidebar .post-feed .title, #sidebar .post-feed .title a {
+	font-size:18px;
+	line-height:30px;
+	font-size:1.8rem;
+	line-height:3rem;
+	margin:-5px 0 0;
+}
+
+#sidebar .post-feed .date {
+	font-size:11px;
+	font-size:1.1rem;
+}
+
+#sidebar .post-feed .description p {
+	font-size:11px;
+	line-height:18px;
+}
+
+/* -- Twitter -- */
+
+.post-feed .content-text {
+	float:left;
+	width:57%;
+}
+
+.post-feed .twitter figure {height:48px; width:48px;}
+
+.post-feed .twitter figure span { border-width:4px; }
+
+/* -- Facebook -- */
+
+.facebook { }
+
+.facebook .content-post { width:100%; }
+
+.post-feed .facebook .content-text { width:85%; }
+
+#page-content .facebook figure {
+	margin: 0 3.5% 10px 0;
+	height:auto;
+	width:60px;
+}
+
+.facebook figure span { max-width:60px; }
+
+.facebook .attachments { margin:25px 0 10px; }
+
+.facebook .attachments .photo-gallery .photos {
+	float:left;
+	margin: 0 15px 15px 0;
+	width:100%;
+}
+
+.facebook .attachments .photo-gallery .photos a { display:inline-block; }
+
+#page-content .facebook .attachments .photo-gallery .photos figure { width: 25%; }
+
+.facebook .attachments .photo-gallery .photos span {
+	display:inline-block;
+	max-width:100%
+}
+
+.facebook .attachments .title {
+	background: none;
+	display: inline-block;
+	font-size: 2em;
+	padding: 0 !important;
+	line-height: 1em;
+}
+
+.facebook .attachments .title a { }
+
+.facebook .attachments .subtitle { }
+
+.facebook .comments { margin-top:15px; }
+
+#page-content .facebook .comments figure {
+	height:auto;
+	width:60px;
+}
+
+.facebook .comments .post-comment-links { }
+
+/* -- Sidebar FB -- */
+
+#sidebar .facebook .content-post { }
+
+#sidebar .facebook .content-post {
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+#sidebar .post-feed .facebook .comments .content-post {
+	margin-bottom: 25px;
+	padding: 10px;
+	width: auto;
+}
+
+#sidebar .facebook figure span { width:auto; }
+
+#sidebar .facebook .attachments { display:inline-block; }
+
+#sidebar .facebook .attachments .photo-gallery figure {
+	margin: 0 5.20382% 5.20382% 0;
+	width: 29.4883%;
+}
+
+#sidebar .facebook .attachments .photo-gallery figure span { }
+
+#sidebar .facebook .attachments .photo-gallery figure:nth-of-type(3n) { margin-right:0; }
+
+#sidebar .facebook .post-info { margin-bottom:5px; }
+
+#sidebar .facebook .comments figure span { width:auto; }
+
+#sidebar .facebook .comments .content-text {
+	display: inline-block;
+	width: 70%;
+}

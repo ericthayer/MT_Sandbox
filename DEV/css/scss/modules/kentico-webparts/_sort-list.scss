@@ -1,0 +1,86 @@
+/* --- Sort By Date List --- */
+
+#sort-list { 
+	padding-bottom: 10px; 
+	header {
+		border: none;
+		margin-bottom:25px;
+		padding: 0;
+		box-shadow:none;
+		h2 {font-size: 20px;}		
+	}
+	p, .sub-subtitle {
+		font-size:14px;
+		margin-top:8px;
+		text-align:center;
+	}
+	ul {
+		list-style-type: none;	
+		margin: 0 0 22px;
+		padding-left:0;
+	}
+	ul > ul {
+		margin-top: 5px;
+		padding-left:15px;
+		li {
+			float: left;
+			span {
+				border-right: 1px solid #CCC;
+				color: #BBB;
+				font-size: 13px;
+				padding: 0 8px;
+			}
+			span:hover { text-decoration:underline; }	
+		}
+		li.current span {color: #90c8f7;}
+		&:after {content: '[ ';}
+		&:before {content: ' ]';}
+		&.first span, &:first-child span {
+			padding-left:0;
+			border-left:none;
+		}
+		&:last-child span {
+			border:none; 
+			padding-right:0;
+		}
+	}
+	li {
+		line-height:24px;
+		list-style-type:none;
+	    list-style-image:none;
+	}
+	li a, ul.sub li a {
+		font-size:16px;		
+		cursor:pointer;
+	}
+	.year {
+		display: block;
+		background: rgba(0,0,0,0.35);
+		margin-bottom:5px;
+		padding:3px 10px;
+		width:100%;
+		box-shadow:1px 1px 1px rgba(255,255,255,0.05);
+	}
+	ul.sub, .archive-blog-list {	
+		width:100%;
+	}
+	ul.sub {
+		display: none;
+		margin:10px 0 0 5px;
+		padding: 0;
+	}
+	.archive-blog-list {
+		display: none;
+		margin: 0 0 5px;
+		padding-left:0;
+		li {
+			float:none;
+			margin-bottom:4px;
+			a {
+				border:none;
+				font-size: 12px;
+				padding:0;
+			}
+		}
+	}
+}

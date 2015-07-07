@@ -1,0 +1,74 @@
+/* --- Accordian  --- */
+/*------------------------------------*/
+
+.PaneHeader, .SelectedPaneHeader {
+	color: white;
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	margin: 10px 0 0;
+	padding: 8px 5px 8px 10px;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.2);
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	transition: opacity 0.3s ease;
+}
+
+.PaneHeader, .PaneHeader:hover {
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px, #114582;
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px,-webkit-gradient(linear, 0 0, 0 100%, from(#1F79E0), to(#114582));
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px,-webkit-linear-gradient(#1F79E0 0%, #114582 100%);
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px,-moz-linear-gradient(#1F79E0 0%, #114582 100%);
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px,-o-linear-gradient(#1F79E0 0%, #114582 100%);
+	background: url("../images/accordion-arrows.png") no-repeat 98.5% -34px, linear-gradient(#1F79E0 0%, #114582 100%);
+}
+
+.SelectedPaneHeader, .SelectedPaneHeader:hover {
+	background:url("../images/accordion-arrows.png") no-repeat 98.5% 6px #BBB;
+	color: white;
+	//text-shadow: $wht-text-shadow;
+}
+
+.PaneHeader:hover, .SelectedPaneHeader:hover {cursor: pointer;}
+
+.PaneHeader:hover {
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+.PaneContent {
+	color: #444;
+	border-left: 5px solid #DDD;
+	font: italic 18px $Cardo;
+	margin: 10px 0 15px 15px;
+	padding: 10px 20px;
+	/*
+&:before, &:after {
+		color: #CCC;
+		font: normal 30px $SortsMillGoudy;
+	}
+	&:before {
+		content:open-quote;
+		display: inline-block;
+		transform: rotateY(180deg);
+	}
+	&:after {content:close-quote;}
+*/
+}
+
+.PaneContent .content-item, .PaneContent .content-post {
+	background: none !important;
+	display: inline !important;
+	padding: 0 !important;
+	width: auto !important;
+}
+
+.PaneContent:last-child { margin-bottom: 0 !important; }
+
+#sidebar .PaneContent .page-item .title, #sidebar .PaneContent .page-item .title a {
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}

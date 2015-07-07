@@ -1,0 +1,73 @@
+################################################################################
+# This .tfignore file was automatically created by Microsoft(R) Visual Studio.
+#
+# Local items matching filespecs in this file will not be added to version
+# control. This file can be checked in to share exclusions with others.
+#
+# Wildcard characters are * and ?. Patterns are matched recursively unless the
+# pattern is prefixed by the \ character.
+#
+# You can prepend a path to a pattern to make it more specific. If you do,
+# wildcard characters are not permitted in the path portion.
+#
+# The # character at the beginning of a line indicates a comment.
+#
+# The ! prefix negates a pattern. This can be used to re-include an item after
+# it was excluded by a .tfignore file higher in the tree, or by the Team
+# Project Collection's global exclusions list.
+#
+# The / character is interpreted as a \ character on Windows platforms.
+#
+# Examples:
+#
+#  # Excludes all files ending in .txt in Alpha\Beta and all its subfolders.
+#  Alpha\Beta\*.txt
+#
+#  # Excludes all files ending in .cpp in this folder only.
+#  \*.cpp
+#
+#  # Excludes all files ending in .cpp in this folder and all subfolders.
+#  *.cpp
+#
+#  # If "Contoso" is a folder, then Contoso and all its children are excluded.
+#  # If it is a file, then only the "Contoso" in this folder is excluded.
+#  \Contoso
+#
+#  # If Help.exe is excluded by a higher .tfignore file or by the Team Project
+#  # Collection global exclusions list, then this pattern re-includes it in
+#  # this folder only.
+#  !\Help.exe    
+#
+################################################################################
+
+\css\scss\.sass-cache\02cba5aab3247b6ea16772ce81dd5b09d3f7b648\screen.scssc
+\css\scss\.sass-cache\0c8a07d559b12d2bd3eeab97be65e24e2fd0a267\_demo.scssc
+\css\scss\.sass-cache\0c8a07d559b12d2bd3eeab97be65e24e2fd0a267\_mixins.scssc
+\css\scss\.sass-cache\0c8a07d559b12d2bd3eeab97be65e24e2fd0a267\_variables.scssc
+\css\scss\.sass-cache\16f8bb748b7b627a2b5f84ded1b3e17deabeae8c\%042c
+\css\scss\.sass-cache\6e4a306ba1aa183da0190a1616dbe1def452c8c2\_responsive-nav.scssc
+\css\scss\.sass-cache\7cb3b767ae274755bb7d83bd03a828bb2c35170a\_owl.carousel.scssc
+\css\scss\.sass-cache\7cb3b767ae274755bb7d83bd03a828bb2c35170a\_owl.theme.scssc
+\css\scss\.sass-cache\7cb3b767ae274755bb7d83bd03a828bb2c35170a\_owl.transitions.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_global.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_index.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_main-content.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_main-nav.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_site-footer.scssc
+\css\scss\.sass-cache\8d542fee4f23e37425081c724fd177963b52de64\_site-header.scssc
+\css\scss\.sass-cache\a64aa525bb65b275b803e280a53bc66d85e03e5d\_font-icons.scssc
+\css\scss\.sass-cache\a64aa525bb65b275b803e280a53bc66d85e03e5d\_fonts.scssc
+\css\scss\.sass-cache\a64aa525bb65b275b803e280a53bc66d85e03e5d\_index.scssc
+\css\scss\.sass-cache\e97cd16567126de5c9dd019f1e455b55774159cb\_fonts.scssc
+\css\scss\.sass-cache\e97cd16567126de5c9dd019f1e455b55774159cb\_normalize.scssc
+\css\scss\.sass-cache\e97cd16567126de5c9dd019f1e455b55774159cb\_typography.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_alerts.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_buttons.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_component-overrides.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_features.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_forms.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_header-links.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_media.scssc
+\css\scss\.sass-cache\f8ef783ba55cba841e59bf7d33fdb3ceb1081f60\_search-bar.scssc
+\js\libs\owl.carousel.1.0.zip
+\js\libs\owl.carousel.zip

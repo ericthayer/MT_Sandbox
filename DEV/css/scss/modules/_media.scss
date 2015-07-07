@@ -1,0 +1,17 @@
+/*--- Video Player ---*/
+
+.video-player {
+	position:relative;
+	height:0;
+	padding-bottom: 56.25% !important;
+	width:100%;
+	iframe {
+		display: inline-block;
+		position:absolute;
+		margin: 0;
+		height:100%;
+		width:100%;
+		top:0;
+		left:0;
+	}
+}

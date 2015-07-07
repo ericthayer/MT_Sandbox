@@ -1,0 +1,65 @@
+/* --- Buttons --- */
+
+.btn {
+	background-color: $secondary-color;
+	color: white;
+	font-family: $Montserrat;
+	font-size: 10px;
+	padding: 4px 10px;
+	text-shadow: $blk-text-shadow-neg;
+	text-transform: uppercase;
+	border-radius: 0;
+	transition: opacity 0.3s ease;
+	a {	
+		color:white;
+		font-size: 10px;
+	}
+	&:before, &:after {
+		font-family: $font-icon;
+	}
+	&:after {
+		content: "";
+		font-size: 12px;
+		line-height: 0;
+		padding-left: 5px;
+	}
+	@media (min-width: $break-sm-phone) {
+		font-size: 9px;
+		a {font-size: 9px;}
+	}
+}
+
+.btn:hover {
+	color: white;
+	opacity: 0.7;
+}
+
+/* --- Button Link --- */
+
+.btn-link {
+	text-align: center;
+	a span {
+		font-size: 15px;
+		padding: 5px 15px;
+	}
+	a span:after {font-size: 17px;}
+	@media (min-width: $break-lg-phone) {
+		text-align: left;
+	}
+}
+
+/* --- Donate --- */
+
+.btn-link.donate { 
+	a span:after {
+		content: " "; // fa-gift
+	} 
+} 
+
+/* --- Purchase  --- */
+
+.btn-link.purchase { 
+	a span:after {
+		content:" "; // fa-credit-card
+	} 
+} 

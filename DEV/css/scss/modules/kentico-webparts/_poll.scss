@@ -1,0 +1,202 @@
+/* --- Poll --- */
+
+.PollControl { margin:0 0 15px; }
+
+.PollControl > div { margin-bottom:10px; }
+
+.PollTitle {
+	display:block;
+	font-size:16px;
+}
+
+.PollQuestion {
+	color:#666;
+	display:inline-block;
+	font:18px/20px 'Open Sans';
+	font:1.8rem/2rem 'Open Sans';
+	margin:0 0 15px 0;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+}
+
+.PollResult, .EditingFormInfoLabel {
+	color:#51595B;
+	display:inline-block;
+	font:italic 14px/22px 'Open Sans';
+	margin:0 0 15px;
+}
+
+.PollAnswerText {
+	color:#51595B;
+	display:inline-block;
+	font:italic 13px/20px 'Open Sans';
+	margin:0 0 5px;
+}
+
+.EditingFormInfoLabel {
+	font-size:16px;
+	margin:0;
+}
+
+.PollAnswers td { padding:3px 0; }
+
+.PollAnswer {
+	display:inline-block;
+	margin-bottom:6px;
+	width:100%;
+}
+
+.PollAnswer input[type="radio"] {
+	float:left;
+	margin:3px 0;
+}
+
+.PollAnswer label, .PollAnswerRadio {
+	color:#666;
+	font:italic 13px/16px 'Open Sans';
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+}
+
+.PollAnswerCheck input { float:left; }
+
+.PollAnswer label, .PollAnswerCheck label {
+	float:left;
+	/*font:12px/14px Arial, Helvetica, sans-serif;
+	font:1.2rem/1.4rem Arial, Helvetica, sans-serif;*/
+	margin:0 0 0 10px;
+	width:85%;
+}
+
+.PollGraph div {
+	background: #e2683f;
+	background: -moz-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2683f), color-stop(100%, #70331f));
+	background: -webkit-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -o-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -ms-linear-gradient(top, #e2683f 0%, #70331f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2683f', endColorstr='#70331f', GradientType=0 );
+	background: linear-gradient(top, #e2683f 0%, #70331f 100%);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	display:block;
+	height:6px;
+	margin-bottom:15px;
+	max-width:98% !important;
+}
+
+.PollAnswers tr:nth-child(2n) .PollGraph div {
+	background: #e2683f;
+	background: -moz-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2683f), color-stop(100%, #70331f));
+	background: -webkit-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -o-linear-gradient(top, #e2683f 0%, #70331f 100%);
+	background: -ms-linear-gradient(top, #e2683f 0%, #70331f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2683f', endColorstr='#70331f', GradientType=0 );
+	background: linear-gradient(top, #e2683f 0%, #70331f 100%);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	height:6px;/*width:98%;*/
+}
+
+.PollAnswers tr:nth-child(4n) .PollGraph div {
+	background: #a7cfdf;
+	background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a7cfdf), color-stop(100%, #23538a));
+	background: -webkit-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+	background: -o-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+	background: -ms-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=0 );
+	background: linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+}
+
+.PollAnswers tr:nth-child(6n) .PollGraph div {
+	background: #b5bdc8;
+	background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b5bdc8), color-stop(36%, #828c95), color-stop(100%, #28343b));
+	background: -webkit-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	background: -o-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	background: -ms-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=0 );
+	background: linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+}
+
+.PollAnswers tr:nth-child(8n) .PollGraph div {
+	background: #d5cea6;
+	background: -moz-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d5cea6), color-stop(40%, #c9c190), color-stop(100%, #b7ad70));
+	background: -webkit-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+	background: -o-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+	background: -ms-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=0 );
+	background: linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+}
+
+.PollAnswers tr:nth-child(10n) .PollGraph div {
+	background: #f96759;
+	background: -moz-linear-gradient(top, #f96759 0%, #890202 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f96759), color-stop(100%, #890202));
+	background: -webkit-linear-gradient(top, #f96759 0%, #890202 100%);
+	background: -o-linear-gradient(top, #f96759 0%, #890202 100%);
+	background: -ms-linear-gradient(top, #f96759 0%, #890202 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f96759', endColorstr='#890202', GradientType=0 );
+	background: linear-gradient(top, #f96759 0%, #890202 100%);
+}
+
+.PollAnswers tr:nth-child(12n) .PollGraph div {
+	background: #febbbb;
+	background: -moz-linear-gradient(top, #febbbb 0%, #bf506c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #febbbb), color-stop(100%, #bf506c));
+	background: -webkit-linear-gradient(top, #febbbb 0%, #bf506c 100%);
+	background: -o-linear-gradient(top, #febbbb 0%, #bf506c 100%);
+	background: -ms-linear-gradient(top, #febbbb 0%, #bf506c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#bf506c', GradientType=0 );
+	background: linear-gradient(top, #febbbb 0%, #bf506c 100%);
+}
+
+.PollAnswers tr:nth-child(14n) .PollGraph div {
+	background: #9dd53a;
+	background: -moz-linear-gradient(top, #9dd53a 0%, #649609 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd53a), color-stop(100%, #649609));
+	background: -webkit-linear-gradient(top, #9dd53a 0%, #649609 100%);
+	background: -o-linear-gradient(top, #9dd53a 0%, #649609 100%);
+	background: -ms-linear-gradient(top, #9dd53a 0%, #649609 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#649609', GradientType=0 );
+	background: linear-gradient(top, #9dd53a 0%, #649609 100%);
+}
+
+.PollCount {
+	color: #666;
+	float: right;
+	font-size: 12px;
+	line-height:6px;
+}
+
+.PollVoteButton, .create-events input[type="submit"] {
+	background: #d6d6d6;
+	background: -moz-linear-gradient(top, #d6d6d6 0%, #aaaaaa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d6d6d6), color-stop(100%, #aaaaaa));
+	background: -webkit-linear-gradient(top, #d6d6d6 0%, #aaaaaa 100%);
+	background: -o-linear-gradient(top, #d6d6d6 0%, #aaaaaa 100%);
+	background: -ms-linear-gradient(top, #d6d6d6 0%, #aaaaaa 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#aaaaaa', GradientType=0 );
+	background: linear-gradient(top, #d6d6d6 0%, #aaaaaa 100%);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #BBB;
+	-moz-box-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	-webkit-box-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	color:#666;
+	font-size:20px;
+	letter-spacing:2px;
+	padding:2px 5px 4px;
+	outline:none;
+	text-align:center;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+}

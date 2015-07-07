@@ -1,0 +1,122 @@
+/*---------------- Popup --------------------*/
+
+.popup {
+	@include white-box;
+	height: 200px;
+	margin: -100px 0 0 -160px;	
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 320px;
+	.title {margin-bottom: 15px;}
+	figure {margin: 0;}
+	.video-player {margin: 0;}
+	.description {
+		margin: 0;
+		p {margin-top: 15px;} 
+	}
+	.details {
+		.video-player {margin: 0;}
+	}
+	div:empty {display: none;}
+	@media (min-width: $break-sm-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}
+	@media (min-width: $break-lg-phone) {
+		margin-left: -384px;
+		width: 768px;
+	}
+}
+
+.popup {font-size: 16px;}
+
+/* --- Photo Gallery --- */
+
+.popup.gallery {
+	display: block;
+	height: auto;
+	margin: 30px auto 0;
+	max-width: 300px;
+	position: static;
+	width: 100%;
+	.row, .page-title {padding:0 15px;}
+	.page-title {margin: 15px 0 10px;}
+	.module {padding: 0;}
+	.title {margin-bottom: 10px;}
+	figure {
+		margin: 0;
+		width: 100%;
+	}
+	@media (min-width: $break-sm-phone) {max-width: 430px;}
+	@media (min-width: 560px) and (max-width: 660px) {max-width: 500px;}
+	@media (min-width: 660px) and (max-width: $break-lg-phone) {max-width: 600px;}
+	@media (min-width: $break-lg-phone) {max-width: 718px;}
+	@media (min-width: $break-md-screen) {max-width: 972px;}
+	@media (min-width: $break-lg-screen) {max-width: 1112px;}
+}
+
+/* --- Video Player --- */
+
+.popup.video {
+	height: auto;
+	margin: 25px auto 0;
+	padding: 15px 15px 0;
+	position: static;
+	iframe {padding: 0;}
+	@media (min-width: $break-lg-phone) {width: 640px;}
+	@media (min-width: $break-md-screen) {width: 860px;}	
+}
+
+/* --- Audio Player --- */
+
+.popup.audio {
+	height: 200px;
+	margin-left: -160px;
+	width: 320px;
+	@media (min-width: $break-sm-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}
+	@media (min-width: $break-lg-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}	
+}
+
+/* --- jPlayer --- */
+
+div.jp-audio div.jp-type-playlist div.jp-interface {
+	height: 120px !important;
+}
+
+div.jp-audio div.jp-type-playlist div.jp-progress {
+	top: 75px !important;
+	left: 25px !important;
+	width: 240px !important;
+	@media (min-width: $break-sm-phone) {width: 405px !important;}
+}
+
+div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+	top: 37px !important;
+	left: 190px !important;
+	@media (min-width: $break-sm-phone) {left: 355px !important;}
+}
+
+div.jp-audio div.jp-type-playlist a.jp-mute, div.jp-audio div.jp-type-playlist a.jp-unmute {
+	top: 32px !important;
+	left: 245px !important;
+	@media (min-width: $break-sm-phone) {left: 410px !important;}
+}
+
+div.jp-audio div.jp-type-playlist div.jp-current-time, div.jp-audio div.jp-type-playlist div.jp-duration {
+	top: 94px !important;
+	left: 25px !important;
+	width: 240px !important;
+	@media (min-width: $break-sm-phone) {width: 405px !important;}	
+}
+
+div.jp-audio div.jp-type-playlist div.jp-current-time {width: auto !important;}
+
+.jp-playlist {text-align: left !important;}

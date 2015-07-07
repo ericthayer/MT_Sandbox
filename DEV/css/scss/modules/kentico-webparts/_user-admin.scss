@@ -1,0 +1,15 @@
+.user-admin .EditingFormTable tr:first-child td {
+	float: left;
+	padding: 0;
+	width: auto;
+	span {font-size: 14px;}
+	span.EditingFormLabel {
+		font-weight: bold;
+		padding-right: 5px;
+		text-transform: uppercase;
+	}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainTop_MyAccount_Widget1_myProfile_editProfileForm_ctl00_UserName_lblText {
+		color: $primary-color;
+		font-size: 16px;
+	}
+}

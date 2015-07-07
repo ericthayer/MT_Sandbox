@@ -1,0 +1,261 @@
+/*---------------- Kentico Forms  --------------------*/
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_BizForm_viewBiz .EditingFormErrorLabel, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_BizForm_viewBiz .ErrorLabel {
+	background: none;
+	font-weight: bold;
+	letter-spacing:0.5px;
+	padding: 5px 10px;
+	width: auto;
+	color: white;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_BizForm_viewBiz .ErrorLabel:before, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_BizForm_viewBiz .EditingFormErrorLabel:before {
+	background: red;
+	color: white;
+	content: "!";
+	font:18px serif;
+	margin:0 8px 0 -13px;
+	padding:0 8px;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+	width:100px;
+	vertical-align: middle;
+	border-radius: 30px;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_BizForm_viewBiz .EditingFormErrorLabel {margin-top:10px;}
+
+.biz-form, .FormPanel, .BoardPanel, .GroupRegistration {
+	margin:0 0 15px;
+}
+
+.BlogCommentsTitle, .BlogLeaveComment {
+	font-size:20px;	
+}
+
+.BlogRequiredValidator { margin:10px 0 0; }
+
+/* --- Form Table Styles  --- */
+/*------------------------------------*/
+
+.FormPanel { }
+
+.FormPanel td, .BoardPanel td, .GroupRegistration td, .DialogPosition td {
+	@include form-td-reset;	
+}
+
+td[class="TopLeftCorner"],td[class="TopMiddleCorner"],td[class="TopRightCorner"] {display: none;}
+
+.EditingFormTable {width: 100%;}
+
+.EditingFormLabel {padding: 0;}
+
+td.EditingFormLabelCell, .BlogCommentName, .BlogCommentEmail, .BlogCommentComments { 
+	padding: 10px 0 0;
+	text-align: left;
+}
+
+td.EditingFormValueCell { }
+
+.EditingFormControlNestedControl { }
+
+td.EditingFormButtonCell {padding: 0;}
+
+.EditingFormButtonLeftCell { }
+
+.BBEditorField { }
+
+.LabelField { }
+
+.PasswStrenghtIndicator { max-width: 200px; }
+
+/* --- Form Styles  --- */
+/*------------------------------------*/
+
+/* .FormPanel input, .FormPanel textarea, .FormPanel select, .BoardPanel input, .BoardPanel textarea, .BoardPanel select { font:12px Arial, Helvetica, sans-serif; } */
+
+/*#main-content input[type="text"], #main-content input[type="email"] #main-content input[type="password"], #main-content textarea {
+	border:none;
+	font-size:13px;
+	padding:4px;
+	outline:none;
+	border-radius: 3px;
+	
+-moz-box-shadow:0 0 3px rgba(0,0,0,0.35);
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.35);
+	box-shadow:0 0 3px rgba(0,0,0,0.35);
+
+
+}*/	
+
+/*.ie input[type="text"], .ie input[type="password"], .ie textarea {border:1px solid #BBB !important;}*/
+
+
+.FormPanel select { }
+
+.FormPanel option { }
+
+.FormPanel input[type="image"] {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+}
+
+.FormPanel input[type="checkbox"] { }
+
+.FormPanel input[type="radio"] { }
+
+
+#p_lt_zoneContent_pageplaceholder_pageplaceholder_lt_zoneMain_MyAccount_myProfile_editProfileForm_ctl00_UserName_lblText {
+	color: #666;
+}
+
+/* -- Input Styles  -- */
+
+.EditingFormImagePathTextBox { }
+
+.ContentButton { }
+
+.SelectButton { }
+
+.ClearButton { margin: 10px 0 !important; }
+
+/* -- Checkbox  -- */
+
+.CheckBoxListField tr {
+	float: left;
+	line-height:25px;
+	margin:0;
+}
+
+.CheckBoxListField td { padding:3px 0; }
+
+.CheckBoxListField label { margin-left:10px; }
+
+/* -- Drop Down (select)  -- */
+
+.DropDownField { 
+	min-width:100%;
+	@media (min-width: $break-md-screen) {min-width: 175px;}
+}
+
+.DropDownItemEnabled { }
+
+.ExtraSmallDropDown {
+	margin-right:5px;
+	width:50px;
+}
+
+.FilterTextBox { }
+
+.ListBoxField {
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.35);
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.35);
+	-o-box-shadow:0 0 3px rgba(0,0,0,0.35);
+	box-shadow:0 0 3px rgba(0,0,0,0.35);
+	border:none;
+	min-height:75px;
+	min-width:150px;
+	padding:5px;
+}
+
+/* -- Radio Button  -- */
+
+.RadioButtonList tr {
+    float:left;
+	line-height:25px;
+	margin:0 10px 0 0;
+}
+
+.RadioButtonList td { padding:3px 0; }
+
+.RadioButtonList label { margin:0 10px; }
+
+/* -- upcoming-events Text  -- */
+
+.upcoming-eventsTextBox { }
+
+.upcoming-eventsIcon, .upcoming-eventsAction { margin-left:10px; }
+
+.upcoming-eventsIcon { vertical-align:middle; }
+
+.upcoming-eventsAction {
+	background:#CCC;
+	color:white !important;
+	font:bold 10px Verdana, Geneva, sans-serif;
+	padding:3px 5px;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+	text-transform:uppercase;
+}
+
+/* -- Image Styles  -- */
+
+.ImageSelector { }
+
+.ImageSelectorHeader { }
+
+.EditingFormImagePathPreview { }
+
+/* -- Media Styles  -- */
+
+.MediaSelector { }
+
+.MediaSelectorHeader { }
+
+.EditingFormMediaPathTextBox { }
+
+.EditingFormMediaPathPreview { }
+
+.MediaSelectorImage { }
+
+/* -- Uploader  -- */
+
+.Uploader { margin:15px 0 0 0; }
+
+.UploaderTable { }
+
+.UploaderUpload { }
+
+.UploaderLabel { }
+
+.UploaderInputFile { }
+
+/* -- Password  -- */
+
+.PasswordStrengthText { 
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.PasswStrenghtIndicator { 
+	max-width: 200px; 
+	margin: 10px 0 0;
+}
+
+.ConfirmationSeparator {
+	clear: both;
+	width: 100%;
+}
+
+/* -- Validation -- */
+
+/*
+.CMSValidator {
+    display: block; 
+    margin: 5px 0;
+}
+*/
+
+.warningDiv { }
+
+.ErrorLabel, .EditingFormErrorLabel, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMainBottom_UploadPost_1_ctl03, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMain_MessageBoard_msgBoard_msgEdit_revEmailValid {
+/*
+	color:red;
+	display: block; 
+	font-size: 12px;
+	margin:10px 0;
+*/
+}
+
+.DicussionPanel { }

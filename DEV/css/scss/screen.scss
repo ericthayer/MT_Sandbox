@@ -1,0 +1,55 @@
+// * UTILITIES................................Components, Variables, Mixins 	
+// * .....VARIABLES.........................Declarations of Sass variables
+// * ..........Colors
+// * ..........Typography
+// * ..........Defaults
+// * ..........Breakpoints
+// * .....MIXINS.................................Sass mixins 
+// * RESET..................................Set reset defaults
+// * GLOBAL CLASSES.........................Set reset defaults
+// * GLOBAL ELEMENTS........................Establish global styles
+// * .....Main
+// * .....Headings
+// * .....Text-related elements (p, blockquote, lists)
+// * .....Defaults
+// * .....Breakpoints
+// * TYPOGRAPHY------------------------------
+// * MEDIA------------------------------
+// * LAYOUT------------------------------
+// * NAVIGATION------------------------------
+// * TOC To Be Continued
+
+
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/demo";
+
+// Plugins
+
+@import "plugins/responsive-nav";
+@import "plugins/owl-carousel/*";
+
+// Global Settings
+@import "base/normalize";
+@import "base/fonts/index";
+@import "base/typography";
+
+// Layout
+@import "layout/default/index";
+
+// Modules
+@import "modules/buttons";
+@import "modules/alerts";
+@import "modules/header-links";
+@import "modules/search-bar";
+@import "modules/forms";
+@import "modules/media";
+@import "modules/features";	
+@import "modules/component-overrides";
+
+// State
+//@import "state";
+
+// Theme
+//@import "theme";

@@ -1,0 +1,87 @@
+/* --- Search Results  --- */
+
+.SearchDialog {
+	font-size:12px;
+	margin-bottom: 30px;
+	table {margin-bottom: 10px;}
+	input[type="text"] {max-width:200px;}
+	td {
+		padding:5px;
+		text-align: left;
+	}
+	label {margin-right:10px;}
+	.EditingFormCategory {
+		display:block; 
+		padding:10px 5px 10px 0;
+	}	
+	.DropDownField {
+		display:inline-block; 
+		margin:0 0 10px 0;
+		width: 100%;
+	}	
+	.DropDownItemEnabled { }	
+	.ExtraSmallDropDown {
+		margin-right:5px;
+		width:50px;
+	}	
+	.FieldLabel {
+		font-size: 14px;
+		margin-right: 10px;
+	}	
+	.FilterTextBox { }	
+	.ListBoxField {
+		-moz-box-shadow:0 0 3px rgba(0,0,0,0.35);
+		-webkit-box-shadow:0 0 3px rgba(0,0,0,0.35);
+		-o-box-shadow:0 0 3px rgba(0,0,0,0.35);
+		box-shadow:0 0 3px rgba(0,0,0,0.35);
+		border:none;
+		min-height:75px;
+		min-width:150px;
+		padding:5px;
+	}
+	@media (min-width: $break-lg-phone) {margin-bottom: 10px;}
+} 
+
+.SearchResults {
+	padding:25px 0;
+	.searchResults .content-text {
+		@include white-box;
+		display: inline-block;
+		margin-bottom:25px;
+		padding: 7%;
+		width:100%;
+		.title {font-size: 1.245em;}
+		@media (min-width: $break-sm-phone) {text-align: left;}
+		@media (min-width: $break-lg-phone) {padding: 3% 4%;}
+	}	
+	.description, .description p {margin:5px 0;}	
+	.doc_link {
+		font-size: 20px;
+		line-height: 1em;	
+		a {
+			display: block;
+			font-size:0.75em;
+			margin-bottom: 20px;
+			text-decoration:underline;
+			width:100%;
+			word-wrap: break-word;
+			@media (min-width: $break-lg-phone) {margin-bottom: 8px;}
+		}
+		span {
+			@include date-label;
+		    text-align: center;    
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.85);
+			width: auto;
+		}
+	}	
+	/*
+	.doc_link span:before, .doc_link span:after {
+		content:"";
+		display:table;
+	}	
+	.doc_link span:after {
+		clear:both;
+		*zoom:1;
+	}
+	*/
+}

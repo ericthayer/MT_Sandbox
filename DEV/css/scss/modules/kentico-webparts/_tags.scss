@@ -1,0 +1,25 @@
+/* -- Tag Cloud  -- */
+
+.tags { 
+	.TagCloud {
+		background-color: #EEE;
+		border: 1px solid #CCC;
+		line-height: 20px;
+		padding: 15px 15px 19px;
+		 span {
+			background-color: $light-blue;
+			//border: 1px solid #2286ad;
+			color:white;
+			display: inline-block;
+			font-size:12px;
+			line-height: 1.6;
+			margin-bottom: 5px;
+			padding: 1px 10px 3px;
+			a {
+				color: white;
+				text-shadow: $blk-text-shadow-neg;
+			}
+			a:hover {text-decoration: underline;}
+		}
+	}
+}

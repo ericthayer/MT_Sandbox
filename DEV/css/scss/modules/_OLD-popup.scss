@@ -1,0 +1,188 @@
+/*---------------- DPI Lightbox Overrides  --------------------*/
+
+#cboxContent {background: url(../images/bg-content-wrap.jpg) repeat !important;}
+
+#cboxCurrent {font-size: 15px;}
+
+.lightboxContent {
+	#outer-container {padding: 15px 0;}
+	.content-wrap {
+		background: white;
+		margin: 0 auto;
+		padding: 15px;
+	}
+	.gallery {
+		clear: both;
+		.thumbnail {
+			@include reset-box;
+			line-height: normal;
+			margin: 0;
+			padding: 0;
+			border-radius: 0;
+		}
+	}
+}
+
+#blog-audio-lightbox {	
+	.container {max-width: 510px;}
+}
+
+#photo-gallery-lightbox {
+	 .container {max-width: 798px;}
+}
+
+#blog-video-lightbox {
+	.container {max-width: 798px;}
+	.details {
+		.title {font-size: 1.8em;}
+		.post-info {font-size: 1em;}
+		p {font-size: 14px;}
+	}
+}
+
+/*---------------- Popup --------------------*/
+
+.container.popup {
+	@include white-box;
+	height: 200px;
+	margin: -100px 0 0 -160px;	
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 320px;
+	@media (min-width: $break-sm-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}
+	@media (min-width: $break-lg-phone) {
+		margin-left: -384px;
+		width: 768px;
+	}
+}
+
+.popup {font-size: 16px;}
+
+/* --- Photo Gallery --- */
+
+.popup.gallery {
+	display: inline-block;
+	height: auto;
+	margin: -50px 10px 50px;
+	max-width: 798px;
+	position: static;
+	.title {margin-bottom: 10px;}
+	figure {
+		margin: 0;
+		width: 100%;
+		//img {max-width: none;}
+	}
+}
+
+/* --- Video Player --- */
+
+.popup.video {
+	height: 192px;
+	margin-top: -96px;
+	iframe {padding: 0;}
+	@media (min-width: $break-sm-phone) {
+		height: 284px;
+		margin-top: -142px;
+	}
+	@media (min-width: $break-lg-phone) {
+		height: 444px;
+		margin-top: -222px;
+	}
+	@media (min-width: $break-md-screen) {
+		height: 518px;
+		margin-top: -259px;
+		margin-left: -450px;
+		width: 900px;
+	}	
+}
+
+/* --- Audio Player --- */
+
+.popup.audio {
+	height: 200px;
+	margin-left: -160px;
+	width: 320px;
+	@media (min-width: $break-sm-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}
+	@media (min-width: $break-lg-phone) {
+		margin-left: -240px;
+		width: 480px;
+	}	
+}
+
+/* --- Popup Details --- */
+
+.popup {
+	.details {
+		figure {margin-top: 15px;}
+		.video-player {margin:15px 0;}		
+	}
+}
+
+.popup .details .comments {
+	margin-top:25px;
+	margin-bottom:0;
+}
+
+.popup .details .comments .content-post { width:96%; }
+
+.popup .details .comments figure {}
+
+.popup .details .comments .content-text { }
+
+.popup .details .comments .post-info span {
+	font-size:9px;
+	line-height:13px;
+}
+
+/* --- jPlayer --- */
+
+div.jp-audio div.jp-type-playlist div.jp-interface {
+	height: 120px !important;
+}
+
+div.jp-audio div.jp-type-playlist div.jp-progress {
+	top: 75px !important;
+	left: 25px !important;
+	width: 240px !important;
+	@media (min-width: $break-sm-phone) {width: 405px !important;}
+}
+
+div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+	top: 37px !important;
+	left: 190px !important;
+	@media (min-width: $break-sm-phone) {left: 355px !important;}
+}
+
+div.jp-audio div.jp-type-playlist a.jp-mute, div.jp-audio div.jp-type-playlist a.jp-unmute {
+	top: 32px !important;
+	left: 245px !important;
+	@media (min-width: $break-sm-phone) {left: 410px !important;}
+}
+
+div.jp-audio div.jp-type-playlist div.jp-current-time, div.jp-audio div.jp-type-playlist div.jp-duration {
+	top: 94px !important;
+	left: 25px !important;
+	width: 240px !important;
+	@media (min-width: $break-sm-phone) {width: 405px !important;}	
+}
+
+div.jp-audio div.jp-type-playlist div.jp-current-time {width: auto !important;}
+
+.jp-playlist {text-align: left !important;}
+
+/*
+<div class="{% ContainerCSSClass != null ? ContainerCSSClass : (PageItemsClass != null ? PageItemsClass : "content-item") %}">
+{%
+if (ContainerTitle != null) {
+  "<header>" + ContainerTitle + "<i class=\"fa fa-calendar\"></i></header>"
+}
+#%}?</div>
+*/

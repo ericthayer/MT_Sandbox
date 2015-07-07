@@ -1,0 +1,168 @@
+/* --- Galleries  --- */
+/*------------------------------------*/
+
+#content .gallery header, #content .gallery h2 {  }
+
+.gallery ul {
+	list-style-type:none;
+	padding:0;
+}
+
+.gallery .content-post { float:left; }
+
+.gallery .content-text { }
+
+.gallery figure { position:relative; }
+
+.gallery figure span { overflow:hidden; }
+
+.gallery figcaption {
+	color: white;
+	font-style: normal;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+#sidebar .gallery figcaption {
+	font-size:18px;
+	padding:3px 8px;
+}
+
+#sidebar .gallery .thumbnail figcaption {
+	font-size:12px;
+	padding:0;
+	text-align:left;
+	text-transform:none;
+}
+
+.gallery .title { }
+
+.gallery .title a { }
+
+#sidebar .gallery .title, #sidebar .gallery .title a {
+	font-size: 10px;
+	line-height: 14px;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	margin:0;
+	padding:0;
+}
+
+/* -- Photo/Video List -- */
+
+.gallery .list { }
+
+#page-content .gallery .list figure {
+	display: inline-block;
+	float: none;
+	margin: 0 0 10px;
+	width:100%;
+}
+
+#sidebar .gallery .list figure { margin:0 0 5px; }
+
+.gallery .list figure span { margin:0; }
+
+.gallery .list figcaption {
+	background:url(../images/overlay-bg-blk-80.png) repeat;
+	font-size: 14px;
+	padding: 8px 15px;
+	width: 100%;
+}
+
+.gallery .list .content-text {
+	height: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#sidebar .gallery .list .content-text { min-height: 60px; }
+
+.gallery .list .title, .gallery .list .title a {
+	background: none;
+	font-size: 24px;
+	line-height: 24px;
+	text-align:center !important;
+}
+
+.gallery .list.photo .title, .gallery .list.photo .title a { font-size:18px; line-height:18px;}
+
+.gallery .list.photo .content-post {
+	margin: 0 4.86517% 3em 0;
+	width:47.5%;
+}
+
+.gallery .list.photo .content-post:last-child { margin-right:0;}
+
+.gallery .list.photo figure span { }
+
+#sidebar .gallery .list.photo figure span {
+	height:71px;
+	width: 88%;
+	overflow:hidden;
+}
+
+.gallery .list.video .content-post {
+	margin: 0 4.86517% 10px 0;
+	width: 47.5%;
+}
+
+.gallery .list.video figure span {  }
+
+.gallery .photo .content-post:nth-of-type(3n) { margin-right:0; }
+
+.gallery .video .content-post:nth-of-type(2n) { margin-right:0; }
+
+/* -- Photo/Video Thumbnails -- */
+
+.gallery .thumbnail {
+	li {
+		display: inline-block;
+		margin:0 10px 10px 0;
+		vertical-align: top;
+		width:23%;
+	}
+}
+
+.gallery .thumbnail li:nth-of-type(4n) { margin-right:0 !important; }
+
+.gallery .thumbnail.titles li:nth-of-type(4n) { }
+
+#page-content .gallery .thumbnail figure {
+	display: inline-block;
+	float: none;
+	margin:0;
+	width:100%;
+}
+
+.gallery .thumbnail figure span {
+	margin:0;
+	max-height:100px;
+	overflow:hidden;
+}
+
+.gallery .thumbnail figcaption {
+	background: none;
+	color: #333;
+	font:12px/18px Arial, Helvetica, sans-serif;
+	font:1.2rem/1.8rem Arial, Helvetica, sans-serif;
+	right:0;
+	bottom:0;
+	margin: 15px 0 0;
+	padding: 0;
+	position: relative;
+	text-align:center;
+	text-transform: none;
+	width:100%;
+}
+
+#sidebar .gallery .thumbnail li {
+	max-height: 400px;
+	margin: 0 0 35px;
+	width:100%;
+}
+
+.gallery .thumbnail figure span {max-height: 115px;}

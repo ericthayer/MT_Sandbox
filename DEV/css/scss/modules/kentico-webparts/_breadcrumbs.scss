@@ -1,0 +1,27 @@
+/* --- Breadcrumbs --- */
+
+.breadcrumbs {
+	float: none;
+	font-size: 12px;
+	margin-bottom: 25px;
+	padding:0;
+	text-align: center;
+	a {
+		color: #999;
+		margin: 0 5px 0 0;
+	}
+	a:after {
+		content: "/";
+		margin:0 0 0 5px;
+	}	
+	&:first-child {margin-left: 0;}
+	&:last-child {margin-right: 0;}
+	@media (min-width: $break-lg-phone) {text-align: left;}
+}
+
+.CMSBreadCrumbsCurrentItem {
+	color:$primary-color;
+	margin:0;
+}
+
+span.CMSBreadCrumbsCurrentItem:after {content:"";}

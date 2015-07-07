@@ -1,0 +1,63 @@
+// Media Queries
+
+$grid-gutter-width: 30px; // gutter width
+
+$grid-columns: 12; // columns
+
+$break-tiny-phone: 240px; // 240px 
+
+$break-sm-phone: 480px; // 480px
+
+$break-md-phone: 568px; // 568px
+
+$break-ml-phone: 667px; // 667px
+
+$break-lg-phone: 768px; // 768px 
+
+$break-md-screen: 992px; // 992px 
+
+$break-lg-screen: 1200px; // 1200px 
+
+$break-xl-screen: 1600px; // 1600px 
+
+// Global Colors
+
+$warning-red: #a02626;
+
+$primary-color: #114582;
+
+$secondary-color: #1861b6;
+
+$primary-color-link: #114582;
+
+$primary-color-link-highlight: #114582;
+
+$red-label-bg: #9b4242;
+
+// Base Font Stacks
+
+// Body
+
+$OpenSans: 'Open Sans', sans-serif;
+
+// Headers & Titles
+
+$Raleway: 'Raleway', sans-serif;
+
+// Generic
+
+$Helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Buttons
+
+$Montserrat: 'Montserrat', sans-serif;
+
+$font-icon: "fontello";
+
+// Specific Helpers
+
+$wht-text-shadow: 0 1px 0 rgba(white, 0.35);
+
+$blk-text-shadow: 1px 1px 1px rgba(black, 0.35);
+
+$blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);

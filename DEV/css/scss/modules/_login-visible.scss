@@ -1,0 +1,119 @@
+/* --- Header Links (login visible)  --- */
+
+.header-links {
+	padding: 4px 0 0;
+	.wrap {
+		float: left;
+		margin:0 0 5px;
+		width: 100%;
+	}
+	@media (min-width: $break-sm-phone) {padding-top: 7px;}
+	.visible-xs.visible-sm.hidden-md.col-xs-12.header-links {display: block !important;}
+	.hidden-sm.login, .hidden-sm.soc-media-links {display: none !important;}	
+}
+
+/* --- Login --- */
+	
+.login {
+	float: left;
+	min-width: 100%;
+	text-align: left;
+	position: relative;
+	z-index: 100;
+	.user-login {
+		float: left;
+		font-size: 13px;
+		width: 100%;
+		i, #user {
+			color: $primary-color-orange;			
+			float: left;
+		}
+		i {
+			font-size: 16px;
+			float: left;
+			line-height: 25px;
+			width: 20px;
+		}
+	}
+	#user {
+		line-height: 25px;
+		margin-left: -20px;
+		width: 91.5%;
+		span {
+			float: left;
+			margin: 0 0 3px 20px;
+			width: 80%;
+		}
+		a {
+			@extend .btn;
+			background-color: $drk-orange-brown;
+			font-size: 8.5px;
+			line-height: 20px;
+			padding: 0 6px;
+			float: left;
+			margin: 2px 5px 0 0;
+		}		
+		a:after {
+			content: "";
+			padding: 0;
+		}
+	}
+	@media (min-width: $break-sm-phone) {
+		min-width: 350px;
+		.user-login {font-size: 14.5px;
+			i, #user {margin-left: 5px;}		
+			i {position: relative;}
+		}
+		#user {
+			margin-left: 0;
+			width: 80%;
+			span {
+				margin: 0 8px 0 0;
+				width: auto;
+			}
+			a {margin-top: 4px;}
+		}	
+	}	
+	@media (min-width: $break-lg-phone) {
+		margin-right: 10px;
+		.user-login {font-size: 12px;}
+		i {line-height: 40px;}
+	}
+}	
+
+/* --- Soc Net Icons --- */
+		
+.soc-media-links {
+	clear: both;
+	float: right;
+	line-height: normal;
+	padding: 0;
+	position:absolute;
+	top: 20px;
+	right: 0;
+	width: auto;
+	z-index: 100;
+	@media (min-width: $break-sm-phone) {
+		clear: none;
+		position:relative;
+		top:0;
+		right: 0;
+	}
+	a {
+		float: left;
+		margin-left: 3px;
+		width: 18px;
+	}
+	@media (min-width: $break-sm-phone) {
+		a {
+			margin-left: 4px;
+			width: 24px;
+		}
+	}
+	@media (min-width: $break-md-screen) {
+		a {
+			line-height: 34px;
+			width: 24px;
+		}	
+	}	
+}

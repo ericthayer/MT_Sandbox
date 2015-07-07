@@ -1,0 +1,58 @@
+/* -- Captcha  -- */
+
+.LogonDialog {
+	margin-bottom:10px;
+	padding: 5px 0;
+}
+
+.LogonDialog label {
+	margin: 5px 0;
+	display: block;
+}
+
+.CaptchaTable {
+	font-size: 14px;
+	font-weight: normal;
+	width: 100%;
+	img {
+		border:1px solid #CCC;
+		margin: 4px 0 10px;
+		@media (min-width: $break-lg-phone) {float: left;}
+	}
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainTop_BizForm_viewBiz_ctl00_SecurityCode_lb, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMain_CustomRegistrationForm_lblCaptcha {
+	display:block; 
+	font-size: 13px;
+	font-weight: bold;
+	margin:10px 0 0;
+	text-align: center;
+	@media (min-width: $break-lg-phone) {text-align: left;}
+}
+
+.CaptchaTable td {
+	float: left;
+	width: 100%;
+}
+
+.CaptchaTable input[type="text"] {
+	display: inline;
+	margin: 0 3px;
+	text-align: center;
+	width:35px;
+}
+
+.CaptchaTable input[type="text"]:first-child {margin-left: 0;}
+
+.CaptchaTable input[type="text"]:last-child {margin-right: 0;}
+
+.formItem input {margin-bottom:5px;}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainTop_BizForm_viewBiz_ctl00_SecurityCode_captchaControl_lblSecurityCode, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMain_CustomRegistrationForm_captchaElem_captchaControl_lblSecurityCode, #p_lt_zoneContent_pageplaceholder_p_lt_zoneMain_CommentView_commentView_ctrlCommentEdit_ctrlCaptcha_captchaControl_lblSecurityCode {
+	display: block;
+	font-size: 12px;
+	font-style: italic; 
+	margin:5px 0;
+}
+
+#p_lt_zoneContent_pageplaceholder_p_lt_zoneMainTop_BizForm_viewBiz_ctl00_SecurityCode_captchaControl_pnlAnswer {font-weight: normal; font-size: 14px;}

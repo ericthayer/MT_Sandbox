@@ -1,0 +1,74 @@
+/* --- Side Nav  --- */
+
+.side-nav {
+	padding: 0;
+	@include text-center-fix;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+	}
+	li {width: 100%;}	
+}
+
+.side-nav li a, .shortcuts a {
+	background-color: $secondary-color;
+	color:white;
+	display: block;
+	font-family: $Montserrat;
+	font-size: 14px;
+	letter-spacing:0.5px;	
+	margin-bottom:5px;
+	padding: 6px 15px 6px;
+	text-transform: uppercase;
+	width: 100%;
+	&:before {
+		content: " ";
+		font-family: $font-icon;
+		padding-right: 3px;		
+	}
+	transition: background-color 0.2s ease-in-out;
+}
+
+.side-nav li a:hover, .side-nav li.current a, .shortcuts a:hover, .shortcuts div.current a {
+	background-color: #3e91ef;
+	text-decoration: none;
+	&:before {		
+		
+	}	
+}
+
+ul.sub-open li.current a {}
+
+.side-nav li ul {
+	background:none;
+	color:#faeba9;
+	list-style-type:disc;
+	margin: -5px 0 10px 0 !important;
+	padding: 0 0 0 45px !important;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+/*.side-nav li:hover ul, */.side-nav li.current ul { display:block; }
+
+.sub-open { display:block !important; }
+
+.side-nav li ul li { }
+
+.side-nav li ul li a {
+	background: none !important;
+	color:#faeba9 !important;
+	font: 12px "open_sansregular" !important;
+	padding: 1px 5px 1px 0 !important;
+	text-transform:none !important;
+}
+
+.side-nav li ul li a:hover {
+	color:#faeba9 !important;
+	text-shadow:none;
+}

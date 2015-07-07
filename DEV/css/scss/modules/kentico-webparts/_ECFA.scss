@@ -1,0 +1,30 @@
+/* --- ECFA Donate --- */
+
+.ECFA-logo {
+	display:inline-block;
+	margin:10px 0 25px;	
+	text-align:center;
+	width:100%;
+}
+
+.ECFA-logo img {
+    display:block;
+    margin: 0 auto 10px;
+}
+
+.ECFA-logo a span {
+	background:none;
+	display: inline-block;
+	font-size:13px;
+	line-height:18px;
+	margin: 0 auto 15px;
+	padding:0;
+	text-decoration:none;
+	text-align: center;	
+	width: 50%;	
+}
+
+.ECFA-logo a span:hover {
+	color:#777;
+	text-decoration:underline;
+}

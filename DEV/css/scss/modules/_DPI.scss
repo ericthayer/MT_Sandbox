@@ -1,0 +1,41 @@
+/*---------------- DPI Lightbox Overrides  --------------------*/
+
+#cboxContent {background: url(../images/bg-content-wrap.jpg) repeat !important;}
+
+#cboxCurrent {font-size: 15px;}
+
+.lightboxContent {
+	#outer-container {padding: 15px 0;}
+	.content-wrap {
+		background: white;
+		margin: 0 auto;
+		padding: 15px;
+	}
+	.gallery {
+		clear: both;
+		.thumbnail {
+			@include reset-box;
+			line-height: normal;
+			margin: 0;
+			padding: 0;
+			border-radius: 0;
+		}
+	}
+}
+
+#blog-audio-lightbox {	
+	.container {max-width: 510px;}
+}
+
+#photo-gallery-lightbox {
+	 .container {max-width: 798px;}
+}
+
+#blog-video-lightbox {
+	.container {max-width: 798px;}
+	.details {
+		.title {font-size: 1.8em;}
+		.post-info {font-size: 1em;}
+		p {font-size: 14px;}
+	}
+}

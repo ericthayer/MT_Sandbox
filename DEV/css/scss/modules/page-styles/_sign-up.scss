@@ -1,0 +1,88 @@
+/*---------------- Sign Up Page --------------------*/
+
+/* --- Member Login Form --- */
+
+.member-login {
+	.LogonPageBackground {	
+		@include mobile-table-reset;	
+		padding:0 20px 0 15px;		
+	}
+	.DialogPosition {
+		table {max-width: 250px;}
+		table, input[type="text"], input[type="email"], input[type="search"], input[type="password"] {width: 100%;}
+		input[type="submit"] {
+			margin-top: 0;
+		}
+		input[type="checkbox"] {
+			float: left;
+			margin-right: 10px;
+		}
+		label[for=p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_Login1_chkRememberMe] {padding-top: 5px;}
+		#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_pnlUpdatePasswordRetrievalLink, #p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_lnkPasswdRetrieval {
+			font-size: 12px;
+			text-decoration: underline;
+			@media (min-width: $break-lg-phone) {
+				float: left;
+				margin-top: -15px;
+			}
+		}
+	}
+	.LogonDialog td {position: relative;}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_Login1_rfvUserNameRequired {
+		font-size: 16px;
+		line-height: 0;
+		position: absolute;
+		top: 22px;
+		left: -14px;
+	}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_txtPasswordRetrieval {@include form-control;}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_pnlPasswdRetrieval {
+		input[type="submit"] {
+			margin-top: 15px;
+			text-align: left;
+		}
+	}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_lblResult {
+		@extend .alert;
+		@extend .alert-success;
+		margin-top: -30px;
+	}
+	
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_rqValue {
+		@extend .alert;
+		@extend .alert-danger;
+		margin: 10px 0 0;	
+	}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneSide_logonform_pnlPasswdRetrieval {margin-top: 10px;}
+}
+
+/* --- Join Now Form --- */
+
+.join-now {
+	margin-top: 25px;
+	h2 {font-size: 1em;}
+	table {
+		@include mobile-table-reset;
+		max-width: 250px;
+	}
+	td {@include form-td-reset;}
+	.FormPanel {
+		@include mobile-table-reset;
+	}
+	.register {
+		.formItem {
+			margin-bottom: 5px;
+			max-width: 225px;
+		    input[type="text"] {width: 100%;}
+		    br {display: none;}
+		}
+	}
+	.RegisterButton {
+		margin: 0;
+	}
+	input[type="submit"] {font-size: 14px;}
+	@media (min-width: $break-lg-phone) {
+		margin-top: 0;
+	}
+	#p_lt_zoneContent_pageplaceholder_p_lt_zoneMain_CustomRegistrationForm_formUser_ctl00_UserPassword_lbe {margin: 10px 0 0;}
+}
