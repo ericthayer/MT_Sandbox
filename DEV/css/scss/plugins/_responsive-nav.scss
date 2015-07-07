@@ -226,6 +226,8 @@
 }
 
 // Icon Based
+
+/*
 .nav-toggle {
   position: fixed;
   -webkit-font-smoothing: antialiased;
@@ -246,7 +248,7 @@
 
 
 .nav-toggle:before {
-  color: #f4421a; /* Edit this to change the icon color */
+  color: #f4421a;   
   font-family: "responsivenav", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -263,6 +265,7 @@
   top: 0;
   left: 0;
 }
+*/
 
 // Text Based
 
@@ -286,7 +289,7 @@
 
 .nav-toggle:before {
 	background: aliceblue;
-  color: darkcyan; /* Edit this to change the icon color */
+  color: darkcyan;
   font-family: $Montserrat, sans-serif;
   font-style: normal;
   font-weight: 400;

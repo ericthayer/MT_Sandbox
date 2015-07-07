@@ -31,7 +31,10 @@
 			  
 			  <!-- *User Login* -->
 		    <div class="demo-wrap">
-			    <h1 class="demo-title">User Login</h1>
+			    <div class="demo-title-bar">
+					  <h1 class="demo-title">User Login</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+				  </div>
 			    
 			    <!-- USER LOGIN (signed out) -->
 			    <div class="user-login">    
@@ -51,9 +54,8 @@
 			    	</div>
    				</div>
 	 				
-	 			<!-- *code* -->
+	 			  <!-- *code* -->
 	 				<div class="code-demo">
-	 				  <button onclick="$(this).parent('.code-demo').toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
 	 				  <div class="code-wrap">
 	 				    <pre rel="HTML">
 		 						<code class="language-markup">			 
@@ -85,7 +87,10 @@
 			  
 			  <!-- *main nav* -->
 			  <div class="demo-wrap">
-				  <h1 class="demo-title">Mobile First Navigation</h1>
+				  <div class="demo-title-bar">
+					  <h1 class="demo-title">Mobile First Navigation</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+				  </div>
 				  
 				  <!-- MAIN NAV -->
 					<section class="main-nav">		      
@@ -121,13 +126,11 @@
 			            <li class="CMSListMenuLI"><a href="/Donate" class="CMSListMenuLink">Donate</a></li>
 			          </ul>
 			        </nav>
-			        <div class="clear"></div>
 			      </div>		      	
 			    </section>
 			    
 			    <!-- *code* -->
 				  <div class="code-demo">
-			      <button onclick="$(this).parent('.code-demo').toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
 				      <div class="code-wrap">
 					      <pre rel="HTML">
 					      	<code class="language-markup">								 
@@ -177,10 +180,13 @@
 			  
 			  <!-- *video slider* -->
 		    <div class="demo-wrap">
-			    <h1 class="demo-title">Full Width Video Slider</h1>
+			    <div class="demo-title-bar">
+					  <h1 class="demo-title">Full Width Video Slider</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+				  </div>
 			    
 			    <!-- VIDEO SLIDER -->
-			    <section class="main-slider">					    
+			    <section class="main-slider" style="display: none;">					    
 				    <!-- Full Width Video Slider -->
 				    <div id="owl-demo-two" class="owl-carousel owl-theme">						   
 						  <!-- slide -->
@@ -195,8 +201,7 @@
 			    </section>
 			    
 			    <!-- *code* -->
-			    <div class="code-demo">
-			    	<button onclick="$(this).parent('.code-demo').toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+			    <div class="code-demo">			    	
 		      	<div class="code-wrap">
 			      	<pre rel="HTML">
 			    			<code class="language-markup">			 
@@ -244,7 +249,10 @@
 		    
 		    <!-- *image slider* -->
 				<div class="demo-wrap">
-				  <h1 class="demo-title">Full Width Image Slider (w/ Lazy Load)</h1>
+				  <div class="demo-title-bar">
+					  <h1 class="demo-title">Full Width Image Slider (w/ Lazy Load)</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+				  </div>
 				  <!-- IMAGE SLIDER -->
 				  <section class="main-slider">
 				    <!-- Full Width Image Slider -->
@@ -265,7 +273,6 @@
 				  </section>
 				  <!-- *code* -->
 				  <div class="code-demo">
-				    <button onclick="$(this).parent('.code-demo').toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
 				    <div class="code-wrap">
 				      <pre rel="HTML">
 				  		<code class="language-markup">			 
@@ -306,6 +313,6 @@
     <script>window.jQuery || document.write('<script src="js/libs/jquery.1.11.2.min.js"><\/script>')</script>
     <script src="js/min/plugins.min.js"></script> 
     <script src="js/min/script.min.js"></script>
-    <script src="js/libs/prism.js"></script> 
+    <script src="js/libs/prism.js"></script>
   </body>
 </html>
