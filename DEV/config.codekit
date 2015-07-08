@@ -470,6 +470,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/css\/scss\/modules\/_user-login.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/scss\/modules\/_user-login.scss",
+		"outputAbbreviatedPath": "\/css\/scss\/css\/_user-login.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/css\/scss\/modules\/kentico-webparts\/_a_community.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1182,6 +1198,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/logo-Navs20s.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20426,
+		"inputAbbreviatedPath": "\/images\/logo-Navs20s.png",
+		"outputAbbreviatedPath": "\/images\/logo-Navs20s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/touch-icons\/favicon-144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1351,7 +1378,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "eric.thayer",
+"lastSavedByUser": "Thayer iMac",
 "manualImportLinks": {
 	},
 "projectAttributes": {

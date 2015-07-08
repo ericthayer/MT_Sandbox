@@ -1,7 +1,9 @@
 // Demo Styles
 
 .demo {
-	background: #F9F9F9;
+	background: #EEE;
+	margin: 0 auto;
+	max-width: 1400px;
 	padding: 0.5vh 2vh;
 	// 992
 	@media (min-width: $break-md-screen) {
@@ -24,26 +26,30 @@
 }
 
 .demo-title {
-  font-size: 1.875vmax;
+  font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 0;
+  // 667
+  @media (min-width: $break-ml-phone) {
+	  font-size: 1.7em;	
+  }
 }
 
 .demo-toggle-btn {
-	background: #EEE;
+	background: white;
 	box-shadow: 0 0 0 1px #DDD;
   border-radius: 0.25em;
   color: #555;
-  font-size: 0.7em;
+  font-size: 0.6em;
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
-  max-width: 100px;
+  max-width: 86px;
   margin: 0.75em auto 0;	
   padding: 0.438em 0.7em;
   position: relative;
   width: 100%;		
-  span {
+  span[class*="icon-"] {
 	  border-radius: 0 0.25em 0.25em 0;
 	  font-size: 1em;
 	  position: absolute;
@@ -53,6 +59,12 @@
 	  padding-top: 0.4em;
 	  padding-left: 0.1em;
 	  height: 100%;	
+  }
+  .icon-carret-up {
+	  background: #AAA;
+	  color: #333;
+	  padding-top: 0.35em;	
+	  text-shadow: 0 -1px 0 rgba(white, 0.25);
   }
   // 480
   @media (min-width: $break-sm-phone) {
@@ -78,11 +90,39 @@
 	}	
 }
 
+.view-code {
+	display: block;	
+}
+
+.hide-code {
+	display: none;	
+}
+
 .visible {
 	.code-wrap {
 		display: block;
 		height: auto;	
 		opacity: 1;
+	}
+	.demo-toggle-btn {
+		// max-width: 95px;	
+	}
+	.view-code {
+		display: none;	
+	}
+	.hide-code {
+		display: block;	
+	}	
+}
+
+.toggle-mobile {
+	display: none;
+	// 992
+	@media (min-width: $break-md-screen) {
+		display: block;	
 	}	
 }	
 
+.mobile-demo {
+	width: 480px;
+}

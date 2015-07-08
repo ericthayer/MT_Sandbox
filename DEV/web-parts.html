@@ -29,11 +29,74 @@
 			<!-- WEB PARTS -->		  
 		  <main class="main-content demo">
 			  
-			  <!-- *User Login* -->
+			  <!-- ** WEB PART CODE STARTS HERE ** -->
+			  
+			  <!-- *global search* -->
+		    <div class="demo-wrap">
+			    <div class="demo-title-bar">
+					  <h1 class="demo-title">Global Search</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
+				  </div>
+			  
+			  
+				<!-- GLOBAL SEARCH -->
+				<div class="search">
+				  <div class="searchBox" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'p_lt_NavBar_SearchBox_btnSearch')">
+				    <input type="text" maxlength="1000" class="clearMeFocus">
+				    <input type="submit" value="">
+				  </div>
+				</div>
+				
+				
+				<!-- *code* -->
+				<div class="code-demo">
+				  <div class="code-wrap">
+				    <pre rel="HTML">
+							<code class="language-markup">			 
+								<script>
+									<!-- GLOBAL SEARCH -->
+									<div class="search">
+									  <div class="searchBox" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'p_lt_NavBar_SearchBox_btnSearch')">
+									    <input type="text" maxlength="1000" class="clearMeFocus">
+									    <input type="submit" value="">
+									  </div>
+									</div>
+								</script>
+							</code>
+						</pre>
+						<pre rel="JavaScript">
+							<code class="language-javascript">
+								<script>	
+									// Search Value Clear
+								  $('.clearMeFocus').val('search');
+								    //For any clearMeFocus textbox
+								    $('.clearMeFocus').each(function() {
+								    var default_value = this.value;
+								    $(this).focus(function() {
+								        if (this.value === default_value) {
+								            this.value = '';
+								        }
+								    });
+								    $(this).blur(function() {
+								        if (this.value === '') {
+								            this.value = default_value;
+								        }
+								    });
+								  });
+								</script>
+							</code>
+						</pre>
+				  </div>
+				</div>
+				
+		    </div>
+
+			  
+			  <!-- *user login* -->
 		    <div class="demo-wrap">
 			    <div class="demo-title-bar">
 					  <h1 class="demo-title">User Login</h1>
-						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
 				  </div>
 			    
 			    <!-- USER LOGIN (signed out) -->
@@ -45,8 +108,8 @@
    				
    				<!-- USER LOGIN (signed in) -->
 			    <div class="user-login">
-				    <div class="currentUserBlock">
-							<span class="CurrentUserName">Global Administrator (administrator) </span>
+				    <div class="current-user">
+							<span class="user-name">Global Administrator (administrator)</span>
 						</div>    
 			    	<div class="user-links">
 				    	<a href="/Edit-Profile.aspx">Edit profile</a>
@@ -69,8 +132,8 @@
 					   				
 					   				<!-- USER LOGIN (signed in) -->
 								    <div class="user-login">
-									    <div class="currentUserBlock">
-												<span class="CurrentUserName">Global Administrator (administrator) </span>
+									    <div class="current-user">
+												<span class="user-name">Global Administrator (administrator)</span>
 											</div>    
 								    	<div class="user-links">
 									    	<a href="/Edit-Profile.aspx">Edit profile</a>
@@ -86,46 +149,152 @@
 		    </div>
 			  
 			  <!-- *main nav* -->
+<!--
 			  <div class="demo-wrap">
 				  <div class="demo-title-bar">
 					  <h1 class="demo-title">Mobile First Navigation</h1>
-						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
+				  </div>
+-->
+				  
+				  <!-- MAIN NAV -->
+<!--
+					<section class="main-nav">		      
+			      <div class="container">
+			        <nav class="nav-collapse" role="navigation" style="display: none;">
+			          <ul>
+			            <li class="active"><a href="/Home">Home</a></li>
+			            <li>
+			              <a href="#">About</a>
+			              <ul class="submenu">
+			                <li><a href="/About/Sample-Page-1">Sample Page 1</a></li>
+			                <li><a href="/About/Sample-Page-2">Sample Page 2</a></li>
+			                <li><a href="/About/Sample-Page-3">Sample Page 3</a></li>
+			              </ul>
+			            </li>
+			            <li><a href="/Blog">Blog</a></li>
+			            <li>
+			              <a href="/Resources">Resources</a>
+			              <ul class="submenu">
+			                <li><a href="/Resources/Sample-Page-3">Sample Page 3</a></li>
+			                <li><a href="/Resources/Sample-Page-6">Sample Page 6</a></li>
+			              </ul>
+			            </li>
+			            <li>
+			              <a href="/Events">Events</a>
+			              <ul class="submenu">
+			                <li><a href="/Events/Event-1">Event 1</a></li>
+			                <li><a href="/Events/Event-2">Event 2</a></li>
+			                <li><a href="/Events/Event-3">Event 3</a></li>
+			              </ul>
+			            </li>
+			            <li><a href="/Contact">Contact</a></li>
+			            <li><a href="/Donate">Donate</a></li>
+			          </ul>
+			        </nav>
+			      </div>		      	
+			    </section>
+-->
+			    
+			    <!-- *code* -->
+<!--
+				  <div class="code-demo">
+				      <div class="code-wrap">
+					      <pre rel="HTML">
+					      	<code class="language-markup">								 
+										<script>
+											<!-- MAIN NAV 
+											<section class="main-nav">		      
+									      <div class="container">
+									        <nav class="nav-collapse" role="navigation">
+									          <ul>
+									            <li class="active"><a href="/Home">Home</a></li>
+									            <li>
+									              <a href="#">About</a>
+									              <ul class="submenu">
+									                <li><a href="/About/Sample-Page-1">Sample Page 1</a></li>
+									                <li><a href="/About/Sample-Page-2">Sample Page 2</a></li>
+									                <li><a href="/About/Sample-Page-3">Sample Page 3</a></li>
+									              </ul>
+									            </li>
+									            <li><a href="/Blog">Blog</a></li>
+									            <li>
+									              <a href="/Resources">Resources</a>
+									              <ul class="submenu">
+									                <li><a href="/Resources/Sample-Page-3">Sample Page 3</a></li>
+									                <li><a href="/Resources/Sample-Page-6">Sample Page 6</a></li>
+									              </ul>
+									            </li>
+									            <li>
+									              <a href="/Events">Events</a>
+									              <ul class="submenu">
+									                <li><a href="/Events/Event-1">Event 1</a></li>
+									                <li><a href="/Events/Event-2">Event 2</a></li>
+									                <li><a href="/Events/Event-3">Event 3</a></li>
+									              </ul>
+									            </li>
+									            <li><a href="/Contact">Contact</a></li>
+									            <li><a href="/Donate">Donate</a></li>
+									          </ul>
+									        </nav>
+									      </div>		      	
+									    </section>
+										</script>
+									</code>
+								</pre>
+				      </div>
+			     </div>
+			  </div>
+-->
+			  
+			  <!-- *main nav* -->
+			  <div class="demo-wrap">
+				  <div class="demo-title-bar">
+					  <h1 class="demo-title">Navigation with Logo</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
 				  </div>
 				  
 				  <!-- MAIN NAV -->
 					<section class="main-nav">		      
-			      <div class="zoneMenu">
+			      <div class="container">
+				      <!-- nav -->
 			        <nav class="nav-collapse" role="navigation">
-			          <ul class="CMSListMenuUL" id="tm">
-			            <li class="CMSListMenuHighlightedLI"><a href="/Home" class="CMSListMenuLinkHighlighted">Home</a></li>
-			            <li class="CMSListMenuLI">
-			              <a href="#" class="CMSListMenuLink">About</a>
-			              <ul class="CMSListMenuUL">
-			                <li class="CMSListMenuLI"><a href="/About/Sample-Page-1" class="CMSListMenuLink">Sample Page 1</a></li>
-			                <li class="CMSListMenuLI"><a href="/About/Sample-Page-2" class="CMSListMenuLink">Sample Page 2</a></li>
-			                <li class="CMSListMenuLI"><a href="/About/Sample-Page-3" class="CMSListMenuLink">Sample Page 3</a></li>
+			          <ul>
+			            <li class="active"><a href="/Home">Home</a></li>
+			            <li class="dropdown">
+			              <a href="#">About</a>
+			              <ul class="submenu">
+			                <li><a href="/About/Sample-Page-1">Sample Page 1</a></li>
+			                <li><a href="/About/Sample-Page-2">Sample Page 2</a></li>
+			                <li><a href="/About/Sample-Page-3">Sample Page 3</a></li>
 			              </ul>
 			            </li>
-			            <li class="CMSListMenuLI"><a href="/Blog" class="CMSListMenuLink">Blog</a></li>
-			            <li class="CMSListMenuLI">
-			              <a href="/Resources" class="CMSListMenuLink">Resources</a>
-			              <ul class="CMSListMenuUL">
-			                <li class="CMSListMenuLI"><a href="/Resources/Sample-Page-3" class="CMSListMenuLink">Sample Page 3</a></li>
-			                <li class="CMSListMenuLI"><a href="/Resources/Sample-Page-6" class="CMSListMenuLink">Sample Page 6</a></li>
+			            <li><a href="/Blog">Blog</a></li>
+			            <li class="dropdown">
+			              <a href="/Resources">Resources</a>
+			              <ul class="submenu">
+			                <li><a href="/Resources/Sample-Page-3">Sample Page 3</a></li>
+			                <li><a href="/Resources/Sample-Page-6">Sample Page 6</a></li>
 			              </ul>
 			            </li>
-			            <li class="CMSListMenuLI">
-			              <a href="/Events" class="CMSListMenuLink">Events</a>
-			              <ul class="CMSListMenuUL">
-			                <li class="CMSListMenuLI"><a href="/Events/Event-1" class="CMSListMenuLink">Event 1</a></li>
-			                <li class="CMSListMenuLI"><a href="/Events/Event-2" class="CMSListMenuLink">Event 2</a></li>
-			                <li class="CMSListMenuLI"><a href="/Events/Event-3" class="CMSListMenuLink">Event 3</a></li>
+			            <li class="dropdown">
+			              <a href="/Events">Events</a>
+			              <ul class="submenu">
+			                <li><a href="/Events/Event-1">Event 1</a></li>
+			                <li><a href="/Events/Event-2">Event 2</a></li>
+			                <li><a href="/Events/Event-3">Event 3</a></li>
 			              </ul>
 			            </li>
-			            <li class="CMSListMenuLI"><a href="/Contact" class="CMSListMenuLink">Contact</a></li>
-			            <li class="CMSListMenuLI"><a href="/Donate" class="CMSListMenuLink">Donate</a></li>
+			            <li><a href="/Contact">Contact</a></li>
+			            <li><a href="/Donate">Donate</a></li>
 			          </ul>
 			        </nav>
+			        <!-- site logo -->
+			        <div class="site-logo">
+					      <a href="#">
+						      <img src="images/logo-Navs20s.png" alt="logo sample">
+					      </a>
+				      </div>
 			      </div>		      	
 			    </section>
 			    
@@ -136,41 +305,41 @@
 					      	<code class="language-markup">								 
 										<script>
 											<!-- MAIN NAV -->
-											<section class="main-nav">
-											  <div class="zoneMenu">
-											    <nav class="nav-collapse" role="navigation">
-											      <ul class="CMSListMenuUL" id="tm">
-											        <li class="CMSListMenuHighlightedLI"><a href="/Home" class="CMSListMenuLinkHighlighted">Home</a></li>
-											        <li class="CMSListMenuLI">
-											          <a href="#" class="CMSListMenuLink">About</a>
-											          <ul class="CMSListMenuUL">
-											            <li class="CMSListMenuLI"><a href="/About/Sample-Page-1" class="CMSListMenuLink">Sample Page 1</a></li>
-											            <li class="CMSListMenuLI"><a href="/About/Sample-Page-2" class="CMSListMenuLink">Sample Page 2</a></li>
-											            <li class="CMSListMenuLI"><a href="/About/Sample-Page-3" class="CMSListMenuLink">Sample Page 3</a></li>
-											          </ul>
-											        </li>
-											        <li class="CMSListMenuLI"><a href="/Blog" class="CMSListMenuLink">Blog</a></li>
-											        <li class="CMSListMenuLI">
-											          <a href="/Resources" class="CMSListMenuLink">Resources</a>
-											          <ul class="CMSListMenuUL">
-											            <li class="CMSListMenuLI"><a href="/Resources/Sample-Page-3" class="CMSListMenuLink">Sample Page 3</a></li>
-											            <li class="CMSListMenuLI"><a href="/Resources/Sample-Page-6" class="CMSListMenuLink">Sample Page 6</a></li>
-											          </ul>
-											        </li>
-											        <li class="CMSListMenuLI">
-											          <a href="/Events" class="CMSListMenuLink">Events</a>
-											          <ul class="CMSListMenuUL">
-											            <li class="CMSListMenuLI"><a href="/Events/Event-1" class="CMSListMenuLink">Event 1</a></li>
-											            <li class="CMSListMenuLI"><a href="/Events/Event-2" class="CMSListMenuLink">Event 2</a></li>
-											            <li class="CMSListMenuLI"><a href="/Events/Event-3" class="CMSListMenuLink">Event 3</a></li>
-											          </ul>
-											        </li>
-											        <li class="CMSListMenuLI"><a href="/Contact" class="CMSListMenuLink">Contact</a></li>
-											        <li class="CMSListMenuLI"><a href="/Donate" class="CMSListMenuLink">Donate</a></li>
-											      </ul>
-											    </nav>
-											  </div>
-											</section>
+											<section class="main-nav">		      
+									      <div class="container">
+									        <nav class="nav-collapse" role="navigation">
+									          <ul>
+									            <li class="active"><a href="/Home">Home</a></li>
+									            <li>
+									              <a href="#">About</a>
+									              <ul class="submenu">
+									                <li><a href="/About/Sample-Page-1">Sample Page 1</a></li>
+									                <li><a href="/About/Sample-Page-2">Sample Page 2</a></li>
+									                <li><a href="/About/Sample-Page-3">Sample Page 3</a></li>
+									              </ul>
+									            </li>
+									            <li><a href="/Blog">Blog</a></li>
+									            <li>
+									              <a href="/Resources">Resources</a>
+									              <ul class="submenu">
+									                <li><a href="/Resources/Sample-Page-3">Sample Page 3</a></li>
+									                <li><a href="/Resources/Sample-Page-6">Sample Page 6</a></li>
+									              </ul>
+									            </li>
+									            <li>
+									              <a href="/Events">Events</a>
+									              <ul class="submenu">
+									                <li><a href="/Events/Event-1">Event 1</a></li>
+									                <li><a href="/Events/Event-2">Event 2</a></li>
+									                <li><a href="/Events/Event-3">Event 3</a></li>
+									              </ul>
+									            </li>
+									            <li><a href="/Contact">Contact</a></li>
+									            <li><a href="/Donate">Donate</a></li>
+									          </ul>
+									        </nav>
+									      </div>		      	
+									    </section>
 										</script>
 									</code>
 								</pre>
@@ -182,22 +351,24 @@
 		    <div class="demo-wrap">
 			    <div class="demo-title-bar">
 					  <h1 class="demo-title">Full Width Video Slider</h1>
-						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
 				  </div>
 			    
 			    <!-- VIDEO SLIDER -->
 			    <section class="main-slider" style="display: none;">					    
-				    <!-- Full Width Video Slider -->
-				    <div id="owl-demo-two" class="owl-carousel owl-theme">						   
-						  <!-- slide -->
-						  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/Uyw1m2t2RJw" frameborder="0" allowfullscreen></iframe></div></div>
-						  <!-- slide -->
-						  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/kRmbVOI6oIM" frameborder="0" allowfullscreen></iframe></div></div>
-						  <!-- slide -->
-						  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/NPos3QNoVGc" frameborder="0" allowfullscreen></iframe></div></div>
-						  <!-- slide -->
-						  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/kylciFbrwcY" frameborder="0" allowfullscreen></iframe></div></div>
-						</div>				    
+				  	<div class="container">
+					  	<!-- Full Width Video Slider -->
+					    <div id="owl-demo-two" class="owl-carousel owl-theme">						   
+							  <!-- slide -->
+							  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/Uyw1m2t2RJw" frameborder="0" allowfullscreen></iframe></div></div>
+							  <!-- slide -->
+							  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/kRmbVOI6oIM" frameborder="0" allowfullscreen></iframe></div></div>
+							  <!-- slide -->
+							  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/NPos3QNoVGc" frameborder="0" allowfullscreen></iframe></div></div>
+							  <!-- slide -->
+							  <div class="item"><div class="video-player"><iframe width="100%" src="https://www.youtube.com/embed/kylciFbrwcY" frameborder="0" allowfullscreen></iframe></div></div>
+							</div>
+				   	</div>				    
 			    </section>
 			    
 			    <!-- *code* -->
@@ -208,35 +379,37 @@
 			    				<script>
 				    				<!-- VIDEO SLIDER -->
 										<section class="main-slider">
-										  <!-- Full Width Video Slider -->
-										  <div class="owl-carousel owl-theme" id="owl-demo-two">
-										    <!-- slide -->
-										    <div class="item">
-										      <div class="video-player">
-										        <iframe frameborder="0" src="https://www.youtube.com/embed/Uyw1m2t2RJw"
-										        width="100%"></iframe>
-										      </div>
-										    </div>
-										    <!-- slide -->
-										    <div class="item">
-										      <div class="video-player">
-										        <iframe frameborder="0" src="https://www.youtube.com/embed/kRmbVOI6oIM"
-										        width="100%"></iframe>
-										      </div>
-										    </div>
-										    <!-- slide -->
-										    <div class="item">
-										      <div class="video-player">
-										        <iframe frameborder="0" src="https://www.youtube.com/embed/NPos3QNoVGc"
-										        width="100%"></iframe>
-										      </div>
-										    </div>
-										    <!-- slide -->
-										    <div class="item">
-										      <div class="video-player">
-										        <iframe frameborder="0" src="https://www.youtube.com/embed/kylciFbrwcY"
-										        width="100%"></iframe>
-										      </div>
+											<div class="container">
+												<!-- Full Width Video Slider -->
+											  <div class="owl-carousel owl-theme" id="owl-demo-two">
+											    <!-- slide -->
+											    <div class="item">
+											      <div class="video-player">
+											        <iframe frameborder="0" src="https://www.youtube.com/embed/Uyw1m2t2RJw"
+											        width="100%"></iframe>
+											      </div>
+											    </div>
+											    <!-- slide -->
+											    <div class="item">
+											      <div class="video-player">
+											        <iframe frameborder="0" src="https://www.youtube.com/embed/kRmbVOI6oIM"
+											        width="100%"></iframe>
+											      </div>
+											    </div>
+											    <!-- slide -->
+											    <div class="item">
+											      <div class="video-player">
+											        <iframe frameborder="0" src="https://www.youtube.com/embed/NPos3QNoVGc"
+											        width="100%"></iframe>
+											      </div>
+											    </div>
+											    <!-- slide -->
+											    <div class="item">
+											      <div class="video-player">
+											        <iframe frameborder="0" src="https://www.youtube.com/embed/kylciFbrwcY"
+											        width="100%"></iframe>
+											      </div>
+											    </div>
 										    </div>
 										  </div>
 										</section>
@@ -250,27 +423,31 @@
 		    <!-- *image slider* -->
 				<div class="demo-wrap">
 				  <div class="demo-title-bar">
-					  <h1 class="demo-title">Full Width Image Slider (w/ Lazy Load)</h1>
-						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn">view code<span class="icon-carret-down"></span></button>
+					  <h1 class="demo-title">Mobile First Navigation</h1>
+						<button onclick="$(this).parent('.demo-title-bar').parent().toggleClass('visible');$(this).find('.icon-carret-down').toggleClass('icon-carret-up');" class="demo-toggle-btn"><span class="view-code">view code</span><span class="hide-code">hide code</span><span class="icon-carret-down"></span></button>						
 				  </div>
+				  
 				  <!-- IMAGE SLIDER -->
 				  <section class="main-slider">
-				    <!-- Full Width Image Slider -->
-				    <div id="owl-demo" class="owl-carousel owl-theme">
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
-				      <!-- slide -->
-				      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+				    <div class="container">
+					    <!-- Full Width Image Slider -->
+					    <div id="owl-demo" class="owl-carousel owl-theme">
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
+					      <!-- slide -->
+					      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+					    </div>
 				    </div>
 				  </section>
+				  
 				  <!-- *code* -->
 				  <div class="code-demo">
 				    <div class="code-wrap">
@@ -279,20 +456,22 @@
 				  			<script>
 					  			<!-- IMAGE SLIDER -->
 								  <section class="main-slider">
-								    <!-- Full Width Image Slider -->
-								    <div id="owl-demo" class="owl-carousel owl-theme">
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
-								      <!-- slide -->
-								      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+								    <div class="container">
+									    <!-- Full Width Image Slider -->
+									    <div id="owl-demo" class="owl-carousel owl-theme">
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" src="http://placehold.it/2400x1350/CCCCCC?text=16:9+image" alt=""></div>
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" src="http://placehold.it/2400x1350/c2dfea?text=16:9+image" alt=""></div>
+									      <!-- slide -->
+									      <div class="item"><img class="lazyOwl" data-src="http://placehold.it/2400x1350/8df4db?text=16:9+image" src="http://placehold.it/2400x1350/8df4db?text=16:9+image" alt=""></div>
+									    </div>
 								    </div>
 								  </section>
 				  			</script>
@@ -313,6 +492,7 @@
     <script>window.jQuery || document.write('<script src="js/libs/jquery.1.11.2.min.js"><\/script>')</script>
     <script src="js/min/plugins.min.js"></script> 
     <script src="js/min/script.min.js"></script>
+    <!-- FOR DEMO ONLY -->
     <script src="js/libs/prism.js"></script>
   </body>
 </html>

@@ -24,6 +24,7 @@
 
 .nav-collapse.opened {
   max-height: 9999px;
+  overflow-y: scroll;
 }
 
 .nav-toggle {
@@ -43,7 +44,7 @@
   }
   .js-nav .nav-collapse.closed {
     max-height: none;
-  }
+  }  
   .nav-toggle {
     display: none;
   }
@@ -61,20 +62,34 @@
   left: 0;
 }
 
+// Main Nav
+
+.main-nav {
+	.container {
+		display: flex;
+		flex-flow: row-reverse wrap;
+	}
+}
+
+// Site Nav
+
 .nav-collapse {
+	 flex: 100%;
 	 list-style: none;
+	 margin-bottom: 0.5em;	
 	 width: 100%;
-	 float: left;
-	ul {
+	 ul {
 	  list-style: none;
 	  width: 100%;
 	  float: left;
 		li {
 		  float: left;
 		  width: 100%;
+		  position: relative;
+		  z-index: 1;		
 		  a {
 			  background: #EEE;
-			  border-bottom: 1px solid white;
+			  border-bottom: 2px solid white;
 			  color: #555;
 			  text-decoration: none;
 			  width: 100%;			  
@@ -82,25 +97,61 @@
 			  float: left;
 			  transition: all 400ms ease;
 			}
-			&:hover {
-				a {
-					background: #CCC;
-					//color: #999;
+			&.dropdown {
+				> a {					
+					&:after {
+						content:"";
+						content:"";
+						font-family: $font-icon;
+						font-size: 0.875em;	
+						// float: right;	
+						padding-left: 0.625em;
+						width: 0.938em;		
+					}
+				}
+				&:hover {
+					> a {					
+/*
+						&:after {
+							content:"";
+							margin: 0;	
+						}
+*/
+					}
 				}
 			}
+			&:hover,
+			&.active {
+				a {
+					background: #CCC;
+				}
+				> .submenu {
+					display: block;	
+					li {
+						a {
+							background: #AAA;
+							&:hover {
+								background: #EEE;
+							}
+						}
+					}	
+				}
+			}			
 		}
 		// Submenu
-	  ul {
-		  display: none;
+	  .submenu {
+		  display: none;	
 		  li {
 			  a {
 				  background: #CCC;
+				  padding-left: 1.5em;	
 				}
 			}
 	  }	
 	}
 	// 992
 	@media screen and (min-width: $break-md-screen) {
+		flex: 75%;
 	  li {
 	    width: 25%;
 	    *width: 24.9%; /* IE7 Hack */
@@ -127,7 +178,14 @@
 		  display: flex;
 		  li {
 			  position: relative;
-			  ul {
+				  &.dropdown {
+					> a {					
+						&:after {
+							float: none;	
+						}
+					}
+				}
+			  .submenu {
 				  position: absolute;
 				  top: 0;
 				  width: 100%;
@@ -159,6 +217,34 @@
 	  }
 	}
 }
+
+// Site Logo
+
+.site-logo {
+	flex: 100%;
+	padding-top: 0.5em;
+	// 320
+	@media (min-width: $break-tiny-phone) {
+		flex: 45%;			
+		padding-right: 0.625em;
+		img {
+			max-width: 165px;	
+		}
+	}
+	// 992
+	@media (min-width: $break-md-screen) {
+		flex: 20%;
+		padding-top: 0;
+		padding-right: 5%;	
+	}
+	// 1200
+	@media (min-width: $break-lg-screen) {
+		img {
+			max-width: 200px;
+		}
+	}			
+}
+
 
 // Submenu
 
@@ -208,7 +294,6 @@
 	}	
 }
 */
-
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
@@ -285,10 +370,19 @@
   width: 115px;
   height: 55px;
   float: right;
+  flex: 100%;
+  // 320
+  @media (min-width: $break-tiny-phone) {
+	  flex: 1%;
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+	  flex: none;
+  }	
 }
 
 .nav-toggle:before {
-	background: aliceblue;
+	background: #EEE;
   color: darkcyan;
   font-family: $Montserrat, sans-serif;
   font-style: normal;
@@ -317,7 +411,7 @@
   font-weight: 700;
   line-height: 55px;
   height: 55px;			
-  content:"";
+  content:"";
 }
 
 .nav-toggle:hover {

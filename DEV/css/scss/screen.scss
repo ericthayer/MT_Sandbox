@@ -25,28 +25,23 @@
 @import "utilities/mixins";
 @import "utilities/demo";
 
-// Plugins
-
-@import "plugins/responsive-nav";
-@import "plugins/owl-carousel/*";
-
 // Global Settings
 @import "base/normalize";
 @import "base/fonts/index";
 @import "base/typography";
 
+// Plugins
+@import "plugins/responsive-nav";
+@import "plugins/owl-carousel/*";
+
 // Layout
 @import "layout/default/index";
 
 // Modules
+
 @import "modules/buttons";
-@import "modules/alerts";
-@import "modules/header-links";
 @import "modules/search-bar";
-@import "modules/forms";
-@import "modules/media";
-@import "modules/features";	
-@import "modules/component-overrides";
+@import "modules/user-login";
 
 // State
 //@import "state";

@@ -1,36 +1,44 @@
 /* --- Search --- */
 
 .search {
-	float: right !important;
-	margin-right: 0;			
+	@include mod-block;
+	display: flex;
+	justify-content: center;
+	.searchBox {
+		display: flex;
+		flex-wrap: nowrap;
+		flex: 1;
+		justify-content: center;
+		max-width: 500px;	
+	}			
 	input {
-		float: right;
 		margin: 0;
 		border-radius: 0;
 	}
 	input[type="text"] {
 		background: white;
+		border: 1px solid #DDD;
 		color: #555;
-		font-size: 13px;
-		max-width: 150px;
-		padding: 5px;
+		flex: 3;
+		font-size: 1em;
+		padding: 0.875em 0.5em;
 	}
-	input[type="submit"], div.collapsed {
+	input[type="submit"] {
 		background: $primary-color;
 		color: white;
-		font-size: 16px;
-		font-family: 'FontAwesome';
-		margin: 0;
-		padding: 4px 10px;
+		font-size: 1.125em;
+		font-family: $font-icon;
+		flex: 0.5;
+		padding: 0.313em 0.625em 0.375em;
+		&:hover {
+			opacity: 0.7;
+		}
 	}
-	 div.collapsed:hover, input[type="submit"]:hover {opacity: 0.7;}
-	 @media (min-width: $break-lg-phone) {		
-		 float: left !important;
-		 	input[type="text"] {padding: 11px 5px 11px 10px;}
-		 	input[type="submit"] {
-			 	background: $secondary-color; 
-			 	padding: 9px 15px;
-		 	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+		input[type="text"] {
+			flex: 4;
+		}
 	}
 }
 

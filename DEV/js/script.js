@@ -13,7 +13,7 @@ $(document).ready(function() {
     label: "Menu",                    // String: Label for the navigation toggle
     insert: "after",                  // String: Insert the toggle before or after the navigation
     customToggle: "",                 // Selector: Specify the ID of a custom toggle
-    closeOnNavClick: true,           // Boolean: Close the navigation when one of the links are clicked
+    closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
     openPos: "relative",              // String: Position of the opened nav, relative or static
     navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
     navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
@@ -40,5 +40,21 @@ $(document).ready(function() {
     slideSpeed : 500,
     paginationSpeed : 400,
     singleItem:true, 
+  });
+  // Search Value Clear
+  $('.clearMeFocus').val('search');
+    //For any clearMeFocus textbox
+    $('.clearMeFocus').each(function() {
+    var default_value = this.value;
+    $(this).focus(function() {
+        if (this.value === default_value) {
+            this.value = '';
+        }
+    });
+    $(this).blur(function() {
+        if (this.value === '') {
+            this.value = default_value;
+        }
+    });
   });  
 });
